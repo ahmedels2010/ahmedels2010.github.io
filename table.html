@@ -1,0 +1,51 @@
+<table>
+	<th>
+		<td>
+			Intestazione colonna 1
+		</td>
+	</th>
+	<tr>
+		<td>
+			<p>Riga 1, colonna 1</p>
+		</td>
+		<td>
+			<p id="testo-giallo">Riga 1, colonna 2</p>
+		</td>
+		<td>
+			<p class="testo-verde">Riga 1, colonna 3</p>
+		</td>
+		<td>
+			<p>Riga 1, colonna 4</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="testo-verde">Riga 2, colonna 1</p>
+		</td>
+	</tr>
+</table>
+<style>
+	table {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		/* rimuovi i commenti dal seguente stile per cambiare il comportamento dei bordi della tabella */
+		/* border-collapse: collapse; */
+	}
+	
+	td, th {
+		border-style: dashed;
+		border-width: 1px;
+		border-color: blue;
+	}
+	
+	.testo-verde {
+		/* Usare il sito https://www.w3schools.com/colors/colors_picker.asp per ottenere altri colori */
+		color: #00FF00;
+	}
+	
+	#testo-giallo {
+		/* Usare il sito https://www.w3schools.com/colors/colors_picker.asp per ottenere altri colori */
+		color: yellow;
+	}
+</style>
