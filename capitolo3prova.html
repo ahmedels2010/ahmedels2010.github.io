@@ -287,4 +287,89 @@ di un singolo pixel. Maggiore è la profondità del colore, più colori possono 
    <li>1-bit (Monocromatico): Può rappresentare solo 2 colori, di solito bianco e nero.</li> 
    <li>8-bit: Può rappresentare 256 colori.</li>
    <li>16-bit: Può rappresentare 65.536 colori.</li>
-   <li>24-bit (True Color): Può rappresentare circa 16,
+   <li>24-bit (True Color): Può rappresentare circa 16,7 milioni di colori, utilizzando 8 bit per ciascun canale di colore (rosso, verde, blu).</li>
+   <li>32-bit: Simile al 24-bit, ma con un canale aggiuntivo per la trasparenza (canale alpha).</li> 
+</ul>
+<br>
+<b>Codifica delle Immagini</b>
+<br>
+Quando un'immagine viene codificata, ogni pixel è rappresentato da una combinazione di bit che definisce il suo colore.
+<br>
+<b>Esempio di Codifica RGB:</b>
+<br>
+<ul>
+ <li>In un'immagine a 24 bit, ogni pixel è rappresentato da tre canali di 8 bit, uno per ogni colore primario (rosso, verde, blu).</li>   
+ <li>Ad esempio, un pixel rosso puro può essere rappresentato come:</li>  
+</ul>
+<br>
+<ul>
+   <li>Rosso: 255 (11111111 in binario)</li> 
+   <li>Verde: 0 (00000000 in binario)</li> 
+   <li>Blu: 0 (00000000 in binario)</li>
+</ul>
+<br>
+<b>Esempio di Codifica PNG:</b>
+<br>
+<ul>
+<li>In un'immagine PNG a 32 bit, i primi 24 bit definiscono il colore RGB del pixel, mentre gli ultimi 8 bit rappresentano il canale alpha per la trasparenza.</li>    
+</ul>
+<br>
+<table>
+<tr>
+	<th>IMMAGINE</th>
+    <th>RISOLUZIONE</th>
+    <th>PROFONDITÀ</th>
+    <th>OCCUPAZIONE MEMORIA</th>
+</tr>
+<tr>
+    <td>B/N</td>
+    <td>1024×740</td>
+    <td>1</td>
+    <td>1024×740×1 bit</td>
+</tr>
+<tr>
+    <td>GRIGIO</td>
+    <td>1024×740</td>
+    <td>8</td>
+    <td>1024×740×8 bit</td>
+</tr>
+<tr>
+    <td>RADIO</td>
+    <td>1024×740</td>
+    <td>16</td>
+    <td>1024×740×16 bit</td>
+</tr>
+<tr>
+    <td>COLORE (RGB)</td>
+    <td>1024×740</td>
+    <td>24</td>
+    <td>1024×740×24 bit</td>
+</tr>
+<tr>
+    <td>COLORE AQ</td>
+    <td>1024×740</td>
+    <td>48</td>
+    <td>1024×740×48 bit</td>
+</tr>
+</table>
+<br>
+<style>
+table {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-collapse: collapse;
+}
+td, th {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+</style>
+<a href="#inizio">vai all'inizio</a>
+<br>
+<h1 id="audio">Audio</h1>
+<br>
+<a href="#inizio">vai all'inizio</a>
+<br>
+<a href="indice.html">vai alla pagina indice</a>
