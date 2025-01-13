@@ -1,7 +1,7 @@
 head>
 <style>
 body {
-  background-color: #99c2ff;
+  background-color: #004d66;
 }
 </style>
 </head>
@@ -12,15 +12,26 @@ body {
 
 <h1></h1>
 <h2>Una sfida a colpi di colori</h2>
-<p>Solo i veri sigma saranno in grado di rendere questa pagina bellissima</p>
+<p>Solo i veri <p id="testo-corsivo">sigma</p> saranno in grado di <p id="testo-grassetto"> rendere questa pagina bellissima</p> </p>
 <h3>John von Neumann</h3>
-<p>È generalmente considerato come uno dei più grandi matematici della storia moderna e una delle personalità scientifiche preminenti del XX secolo.
+<p>È generalmente considerato come uno dei più grandi <p id="testo-corsivo">matematici</p> della storia moderna e una delle <p id="testo-grassetto">personalità scientifiche preminenti del XX secolo.</p> 
   A lui si devono contributi fondamentali in numerosi campi della conoscenza come la <span class="grassetto">teoria degli insiemi</span>,
   <span class="grassetto">analisi funzionale</span>, <span class="corsivo">topologia</span>, <span class="corsivo">fisica quantistica</span>,
   economia, informatica, teoria dei giochi, fluidodinamica e in molti altri settori della matematica.</p>
 
 </body>
 <style>
+  #testo-corsivo{ 
+    font-size: 18px; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#testo-grassetto{
+font-size: 18px;
+font-family: 'Times New Roman', serif;
+font-weight: normal;
+font-style: bold;
 
 h1 {
   border: double;
