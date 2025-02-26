@@ -113,7 +113,9 @@
     
     <h2 id="scheda madre">Scheda Madre</h2>
     <br>
+    <div2>
     <img src="scheda madre.jpeg"style="width:550px; height:450px" id="bord">
+  </div2>
     <br>
     <h3>
     <div>
@@ -137,7 +139,9 @@
     
     <h2 id="cavi"> Cavi</h2>
     <br>
+    <div3>
     <img src="cavi.jpg" style="width:550px; height:450px" id="bord">
+  </div3>
     <br>
     <h3>
     <div>
@@ -210,8 +214,9 @@
     <br>
     </div>
     <br>
+    <div4>
     <img src="periferiche.jpeg" style="width:550px; height:450px" id="bord">
-    
+  </div4>
     <br>
     </h3>
     
@@ -230,7 +235,9 @@
     <br>
     2.<i>Software</i> : L’Intelligenza del Sistema
     <br>
+    <div4>
     <img src="software.jpeg" style="width:550px; height:450px" id="bord">
+  </div4>
     <br>
     <h3>
     <div>
@@ -260,7 +267,9 @@
     
     <h2 id="firmware">Firmware</h2>
     <br>
+    <div5>
     <img src="firmware.jpg" style="width:550px; height:450px"id="bord">
+  </div5>
     <br>
     <div>
       <h3>
@@ -283,7 +292,9 @@
     Il BIOS (Basic Input/Output System) è un componente fondamentale di qualsiasi computer. Si tratta di un firmware integrato nella scheda madre, che svolge un ruolo cruciale durante l'avvio del sistema e nella gestione delle funzioni di base dell'hardware. Ecco una spiegazione dettagliata del BIOS:
     <br>
     <br>
+    <div6>
     <img src="bios.jpg" style="width:550px; height:450px" id="bord">
+  </div6>
     <br>
     1. Cos'è il BIOS?
     <br>
@@ -363,7 +374,9 @@
     </h3>
     <h2 id="sistema operativo">Sistema Operativo</h2>
     <br>
+    <div7>
     <img src="sistema operativo.jpg" style="width:550px; height:450px" id="bord">
+  </div7>
     <br>
     <div>
       <h3>
@@ -402,7 +415,9 @@
     </h3>
     <h2 id="applicazioni">Applicazioni</h2>
     <br>
+    <div8>
     <img src="applicazioni.jpg" style="width:550px; height:450px" id="bord">
+  </div8>
     <br>
     <h3>
     <div>
@@ -450,7 +465,7 @@
           }
           #bord {
             background-color: white;
-            width: 450px;
+            width: 500px;
             border: 15px solid black;
             padding: 0px;
             margin: 10px;
@@ -460,13 +475,90 @@
         color: white
       }
       div1 {
-  background-image: url(hardware1.jpeg);
+  background-image: url("hardware1.jpeg");
   position: relative;
   animation-name: mymove;
-  animation-duration: 5s;
+  animation-duration: 20s;
 }
 
 @keyframes mymove {
+  from {left: 500px;}
+  to {left: 0px;}
+}
+div2 {
+  background-image: url("scheda madre.jpeg");
+  position: relative;
+  animation-name: mymove2;
+  animation-duration: 20s;
+}
+
+@keyframes mymove2 {
+  from {left: 500px;}
+  to {left: 0px;}
+}
+div3 {
+  background-image: url("periferiche di output");
+  position: relative;
+  animation-name: mymove3;
+  animation-duration: 20s;
+}
+
+@keyframes mymove3 {
+  from {left: 500px;}
+  to {left: 0px;}
+}      
+div4 {
+  background-image: url("software.jpeg");
+  position: relative;
+  animation-name: mymove4;
+  animation-duration: 20s;
+}
+
+@keyframes mymove4 {
+  from {left: 500px;}
+  to {left: 0px;}
+}      
+div5 {
+  background-image: url("firmware.jpg");
+  position: relative;
+  animation-name: mymove5;
+  animation-duration: 20s;
+}
+
+@keyframes mymove5 {
+  from {left: 500px;}
+  to {left: 0px;}
+}      
+div6 {
+  background-image: url("bios.jpg");
+  position: relative;
+  animation-name: mymove6;
+  animation-duration: 20s;
+}
+
+@keyframes mymove6 {
+  from {left: 500px;}
+  to {left: 0px;}
+}      
+div7 {
+  background-image: url("sistema operativo.jpg");
+  position: relative;
+  animation-name: mymove7;
+  animation-duration: 20s;
+}
+
+@keyframes mymove7 {
+  from {left: 500px;}
+  to {left: 0px;}
+}
+div8 {
+  background-image: url("applicazioni.jpg");
+  position: relative;
+  animation-name: mymove8;
+  animation-duration: 20s;
+}
+
+@keyframes mymove8 {
   from {left: 500px;}
   to {left: 0px;}
 }
