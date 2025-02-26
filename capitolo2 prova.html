@@ -62,7 +62,9 @@
     <br>
     <h2 id="hardware">Hardware</h2>
     <br>
+    <div1>
     <img src="hardware1.jpeg" style="width:550px; height:450px" id="bord">
+  </div1>
     <br>
     <h3>
     1.<i>Hardware</i> : La Base Fisica
@@ -448,7 +450,7 @@
           }
           #bord {
             background-color: white;
-            width: 500px;
+            width: 450px;
             border: 15px solid black;
             padding: 0px;
             margin: 10px;
@@ -457,5 +459,16 @@
         background-image: url(background.jpeg); 
         color: white
       }
+      div1 {
+  background-image: url(hardware1.jpeg);
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 5s;
+}
+
+@keyframes mymove {
+  from {left: 500px;}
+  to {left: 0px;}
+}
       </style>
     
