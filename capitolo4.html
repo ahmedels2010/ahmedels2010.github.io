@@ -9,12 +9,12 @@
         </h3>
     </div>
 <div>
-
+    <table id="table">
+        <td>
     <h2 id="algoritmi">Algoritmi</h2>
     <h3>
         <div1><img src="algoritmo.jpeg" style="width:550px; height:450px;"id="bord"></div1>
-        <table id="table">
-            <td>
+
 L'algoritmo è un concetto chiave sia nella matematica che nell'informatica.
 <br>
 In parole semplici, un algoritmo è una sequenza di passaggi ben definiti e
@@ -83,7 +83,7 @@ trovare soluzioni più efficaci per problemi complessi.
 </td>
 </table>
 <div>
-    <table id="table" id="left">
+    <table id="table" class="left">
         <td>
 <h2 id="programmazione">Programmazione</h2>
 <h3>
@@ -149,45 +149,36 @@ in molti casi, di contribuire a cambiarlo.
             top:10px;
             right:10px;
         }
-        div{
-          width: 500px;
-          padding: 0px;
-          margin: 10px;
-        }
         div1 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
-}
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
-}
-#bord {
-          border-color: black;
-          border-style: groove;
-          border-width: 10px;
-          width: 500px;
-          margin: 15px;
-          padding: 0px;
-          border-radius: 8px;
+            position: relative;
+            animation-name: mymove8;
+            animation-duration: 20s;
+      }
+    @keyframes mymove8 {
+            from {left: 500px;}
+            to {left: 0px;}
         }
-        div2 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
-}
+        #bord {
+            border-color: black;
+            border-style: groove;
+            border-width: 10px;
+        }
+        div2 {  
+            position: relative;
+            animation-name: mymove8;
+            animation-duration: 20s;
+        }
 
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
-}
-table {
+        @keyframes mymove8 {
+            from {left: 500px;}
+            to {left: 0px;}
+        }
+        table {
 		border-style: solid;
 		border-width: 4px;
 		border-color: white;
 		border-collapse: collapse;
-}
+        }
         td {
 		border-style: solid;
 		border-width: 4px;
@@ -202,7 +193,7 @@ table {
           padding: 0px;
           border-radius: 8px;
     }
-    #left{
+    .left{
       margin-left:1050px;
       margin-top:-680;
     }
