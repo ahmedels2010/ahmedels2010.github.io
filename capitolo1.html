@@ -1,7 +1,7 @@
 <body>
-  <div>
     <h1 id="c'osè l'informatica"><b>cos'è l'informatica:</b></h1>
     <br>
+    <div>
     <h3>
      <a href="#informatica come scienza"><i>la scienza</i></a>
     
@@ -16,12 +16,9 @@
         <br>
     <h2 id="informatica come scienza"><b>informatica come scienza:</b></h2>
     <br>
-    <div5>
-    <img src="scienza.jpeg" style="width:550px; height:450px;" id="bord" />
-    </div5>
+    <img src="scienza.jpeg" style="width:550px; height:450px;" id="bord"  id="img"/>
     <br>
     </h3>
-    <div>
       <h3>
     Cos'è l'informatica e cosa significa questo nome?
     <br>
@@ -54,15 +51,10 @@
     la medicina, l'ingegneria e l'istruzione.
     <br>
     </h3>
-    </div>
     <h2 id="breve storia dell'informatica"><b>breve storia dell'informatica:</b></h2>
     <br>
-    <div1>
-    <img src="storia.jpeg" style="width:550px; height:450px;"id="bord" />
-
-  </div1>
+    <img src="storia.jpeg" style="width:550px; height:450px;"id="bord" id="img" />
     <br>
-    <div>
       <h3>
     Origini: L'informatica moderna ha avuto inizio nel XX secolo, ma le sue fondamenta
     <br>
@@ -86,14 +78,10 @@
     fino alla rivoluzione del cloud computing e dei dispositivi mobili.
     <br>
     </h3>
-    </div>
     <h2 id="aspetti positivi della tecnologia"><b>aspetti positivi della tecnologia:</b></h2>
     <br>
-    <div2>
-    <img src="aspetti posetivi.jpeg" style="width:550px; height:450px;" id="bord" />
-  </div2>
+    <img src="aspetti posetivi.jpeg" style="width:550px; height:450px;" id="bord" id="img" />
     <br>
-    <div>
     <h3>
     <b>ACCESSO ALL'INFORMATICA:</b>
     <br>
@@ -112,14 +100,10 @@
     La tecnologia facilita la creazione di nuovi strumenti e soluzioni per affrontare problemi complessi.
     <br>
     </h3>
-    </div>
     <h2 id="aspetti negativi della tecnologia"><b>aspetti negativi della tecnologia:</b></h2>
     <br>
-    <div3>
-    <img src="aspetti negativi.jpeg" style="width:550px; height:450px;" id="bord"/>
-    </div3>
+    <img src="aspetti negativi.jpeg" style="width:550px; height:450px;" id="bord"  id="img" />
     <br>
-    <div>
       <h3>
         La tecnologia, senza dubbio, ha portato enormi benefici alla società, 
 <br>
@@ -219,14 +203,10 @@ al bene della società senza compromettere la nostra salute, la nostra
 privacy e la nostra coesione sociale.
 <br>
 </h3>
-    </div>
     <h2 id="comportamento in rete"><b>Comportamento in rete:</b></h2>
     <br>
-    <div4>
-    <img src="comportamento in rete.jpeg" style="width:550px; height:450px" id="bord">
-  </div4>
+    <img src="comportamento in rete.jpeg" style="width:550px; height:450px" id="bord" id="img" >
     <br>
-    <div>
       <h3>
     <b>Netiquette:</b> Il comportamento corretto online, che include rispetto per gli altri, evitare comportamenti
     <br>
@@ -275,8 +255,8 @@ privacy e la nostra coesione sociale.
     </body>
     <style>
 
-#indice{
-        position:fixed;
+        #indice{
+            position:fixed;
             top:40px;
             right:10px;
       }
@@ -287,74 +267,48 @@ privacy e la nostra coesione sociale.
             right:10px;
         }
         div{
-          width: 500px;
-          padding: 0px;
-          margin: 10px;
+            border: 8px solid black;
+            border-radius: 25px;
+            position: relative;
+            margin-left: 380px;
+            margin-right: 420px ;
+            font-weight: bold;
+        }
+        h1{
+          border:0px solid transparent;
+          position: relative;
+          margin-left: 600px;
         }
         #bord {
-          border-color: black;
-          border-style: groove;
-          border-width: 10px;
-          width: 500px;
-          margin: 15px;
-          padding: 0px;
-          border-radius: 8px;
+            border-color: black;
+            border-style: groove;
+            border-width: 10px;
+            width: 500px;
+            margin: 15px;
+            padding: 0px;
+            border-radius: 8px;
         }
         body {
-      background-image: url(background.jpeg); 
-      color: white
-    }
-    div1 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
-}
+            background-image: url(background.jpeg); 
+            color: white
+            }
+            img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+            }
 
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
-}
-div2 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
-}
-
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
-}
-
-  div3 {
-    position: relative;
-    animation-name: mymove8;
-    animation-duration: 20s;
-    }
-    
-    @keyframes mymove8 {
-    from {left: 500px;}
-    to {left: 0px;}
-    }
-        div4 {
-          position: relative;
-          animation-name: mymove8;
-          animation-duration: 20s;
-          }
-          
-          @keyframes mymove8 {
-          from {left: 500px;}
-          to {left: 0px;}
-          }
-            
-          div5 {
-          position: relative;
-          animation-name: mymove8;
-          animation-duration: 20s;
-          }
-          
-          @keyframes mymove8 {
-          from {left: 500px;}
-          to {left: 0px;}
-          }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+                        }
   
     </style>
