@@ -1,7 +1,7 @@
 <body>
     <h1 id="c'osè l'informatica"><b>COS'E' L'INFORMATICA:</b></h1>
     <br>
-    <div>
+    <div id="uno">
     <h3>
      <a href="#informatica come scienza"><i>la scienza</i></a>
     
@@ -14,11 +14,13 @@
        <br>
         <a href="#comportamento in rete"><i>comportamento in rete</i></a>
         <br>
+        </h3>
+    </div>
+    <div id="sinistra">
     <h2 id="informatica come scienza"><b>informatica come scienza:</b></h2>
     <br>
     <img src="scienza.jpeg" style="width:550px; height:450px;" id="bord"  id="img"/>
     <br>
-    </h3>
       <h3>
     Cos'è l'informatica e cosa significa questo nome?
     <br>
@@ -51,6 +53,8 @@
     la medicina, l'ingegneria e l'istruzione.
     <br>
     </h3>
+    </div>
+    <div id="destra" class="sopra1">
     <h2 id="breve storia dell'informatica"><b>breve storia dell'informatica:</b></h2>
     <br>
     <img src="storia.jpeg" style="width:550px; height:450px;"id="bord" id="img" />
@@ -78,6 +82,8 @@
     fino alla rivoluzione del cloud computing e dei dispositivi mobili.
     <br>
     </h3>
+  </div>
+  <div id="sinistra" class="sopra">
     <h2 id="aspetti positivi della tecnologia"><b>aspetti positivi della tecnologia:</b></h2>
     <br>
     <img src="aspetti posetivi.jpeg" style="width:550px; height:450px;" id="bord" id="img" />
@@ -100,6 +106,8 @@
     La tecnologia facilita la creazione di nuovi strumenti e soluzioni per affrontare problemi complessi.
     <br>
     </h3>
+  </div>
+  <div id="destra" class="sopra2">
     <h2 id="aspetti negativi della tecnologia"><b>aspetti negativi della tecnologia:</b></h2>
     <br>
     <img src="aspetti negativi.jpeg" style="width:550px; height:450px;" id="bord"  id="img" />
@@ -203,6 +211,8 @@ al bene della società senza compromettere la nostra salute, la nostra
 privacy e la nostra coesione sociale.
 <br>
 </h3>
+</div>
+<div id="sinistra" class="sopra3">
     <h2 id="comportamento in rete"><b>Comportamento in rete:</b></h2>
     <br>
     <img src="comportamento in rete.jpeg" style="width:550px; height:450px" id="bord" id="img" >
@@ -270,8 +280,7 @@ privacy e la nostra coesione sociale.
             border: 8px solid black;
             border-radius: 25px;
             position: relative;
-            margin-left: 380px;
-            margin-right: 420px ;
+            margin-top: 15px;
             font-weight: bold;
             box-shadow: 5px 10px #888888;
         }
@@ -292,6 +301,31 @@ privacy e la nostra coesione sociale.
         body {
             background-image: url(background.jpeg); 
             color: white
+            }
+            #uno {
+              margin-right: 1300px;
+            }
+            #sinistra{
+              margin-right:900px;
+            }
+            #destra{
+              margin-right: 200px;
+              margin-left: 680px;
+              padding-bottom: 85px;
+              position: relative;
+            }
+            .sopra{
+              top: -975px;
+              padding-bottom: 905px;
+            }
+            .sopra1{
+              top: -980px;
+            }
+            .sopra2{
+              top: -2775px;
+            }
+            .sopra3{
+              top: -2760px;
             }
             img:hover {
             animation: shake 0.5s;
