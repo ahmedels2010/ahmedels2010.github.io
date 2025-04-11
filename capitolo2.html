@@ -1,172 +1,178 @@
 
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/capitolo2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>CAPITOLO 2</title>
+</head>
+
 <body>
+  <div class="button">
+    <a href="copertina.html" class="btn"><i class="fas fa-home"></i> COPERTINA</a>
+    <a href="indice.html" class="btn"><i class="fas fa-list"></i> INDICE</a>
+    <a href="capitolo1.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 1</a>
+    <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 2</a>
+    <a href="capitolo3.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
+    <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
+    <a href="capitolo5.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+  </div>
 
-  <h1 id="inizio">HARDWARE E SAFTWARE:</h1>
-  <br>
-  <div>
-  <h3>
-  <a href="#hardware"><i>Hardware</i></a>
-  <br> 
-  <ul>
-   <li><a href="#schede"><i>Schede</i></a></li>
-  
-  <li><a href="#cavi"><i>Cavi</i></a></li>
-   <li><a href="#periferiche"><i>Priferiche</i></a></li>
-    <ul>  
-   <li> Input </li>
-  <li>Output</li> 
-   <li>I/O</li>
-   </ul>
-  </ul>
-  <br>
-  
-  
-  
-  
-  <a href="#software"><i>Software</i></a>
-  <ul>
-  <li><a href="#firmware"><i>Firmware</i></a></li>
-  <li><a href="#sistema operativo"><i>Sistemi Operativi</i></a></li>
-  <ul> 
-  <li>Window</li>
-  <li>IOS</li>
-  <li>Android</li>
-   <li>VNIX</li>
-  </ul>
-  <li><a href="#applicazioni"><i>Applicazioni</i></a></li>
-   <ul> 
-   <li>E.Learning</li>
-   <li>E.Commerce</li>
-   </ul>
-  </ul>
-  Hardware e Software: una Sinergia Essenziale
-  <br>
-  L'informatica moderna si fonda su due elementi,
-  <br>
-  chiave: <b>hardware</b> e <b>software</b>. Questi due componenti,
-  <br>
+  <h1 id="UP"> CAPITOLO 2 :</h1>
+  <h3> Il computer è composto da due parti principali: hardware e software.</h3>
+
+<p>
+  Hardware e Software: una Sinergia EssenzialeL'informatica moderna si fonda su due elementi,chiave: <b>hardware</b> e <b>software</b>. Questi due componenti,
   pur essendo distinti, collaborano in modo sinergico
-  <br>
+
   per creare l’infrastruttura che sostiene i dispositivi
-  <br>
+  
   digitali e le tecnologie che utilizziamo ogni giorno.
-  
-  
-  </h3>
-  
-  
-  <br>
-  <h2 id="hardware">Hardware</h2>
-  <br>
- 
-  <img src="hardware1.jpeg" style="width:550px; height:450px" id="bord" id="img">
+</p>
 
-  <br>
-  <h3>
-  1.<i>Hardware</i> : La Base Fisica
-  <br>
-  L’hardware comprende tutti i componenti
-  <br>
-  fisici di un sistema informatico. Include 
-  <br>
-  tutto ciò che è tangibile, come il processore (<b>CPU</b>)
-  <br>
-  , la memoria <b>RAM</b>, il disco rigido, la scheda grafica
-  <br>
-  e i dispositivi di input/output come tastiere, monitor
-  <br>
-  e stampanti.
-  <br>
-  L’hardware si suddivide in diverse categorie:
-  <br>
-  Dispositivi di input: come tastiere, mouse e 
-  <br>
-  scanner, che consentono agli utenti di inserire dati.
-  <br>
-  <b>Unità di elaborazione centrale</b> (CPU): il cervello
-  <br>
-  del computer, responsabile dell'esecuzione delle istruzioni
-  <br>
-  dei programmi.
-  
-  <br>
-  <b>Memorie</b>: sia <b>RAM</b>, per l’archiviazione temporanea dei dati,
-  sia dispositivi di memoria permanenti come SSD e HDD.
-  <br>
-  <b>Dispositivi di output</b>: come monitor e stampanti, che permettono
-  <br>
-  di visualizzare i dati elaborati.
-  <br>
-  In sintesi, l’hardware fornisce la "struttura" necessaria affinché il
-  <br>
-  software possa operare.
-  <br>
+  <div id="menu-button" onclick="toggleMenu()">☰</div>
+  <div id="navbar">
+    <a href="#Schede">Schede</a>
+    <a href="#periferiche">Periferiche</a>
+  </div>
 
-  
-  
-  </h3>
-  
-  <h2 id="scheda madre">Scheda Madre</h2>
-  <br>
+  <div>
+    <button onclick="toggleSection('hardware')">Mostra Hardware</button>
+    <button onclick="toggleSection('soft')">Mostra Software</button>
 
-  <img src="scheda madre.jpeg"style="width:550px; height:450px" id="bord" id="img">
+    <div class="container">
+      <div class="hardware">
+        
+        <h2>1. Hardware :</h2>
+        <img src="hardware1.jpeg" alt="errore" id="bord" ">
+        <h3>
 
-  <br>
-  <h3>
-  La "scheda madre" è il cuore di un computer. Si tratta di una scheda di circuiti stampati
-  <br>
+          L’hardware comprende tutti i componenti
+        
+          fisici di un sistema informatico. Include 
+          
+          tutto ciò che è tangibile, come il processore (<b>CPU</b>)
+          
+          , la memoria <b>RAM</b>, il disco rigido, la scheda grafica
+          
+          e i dispositivi di input/output come tastiere, monitor
+          
+          e stampanti.
+          
+          L’hardware si suddivide in diverse categorie:
+          
+          Dispositivi di input: come tastiere, mouse e 
+          
+          scanner, che consentono agli utenti di inserire dati.
+          
+          <b>Unità di elaborazione centrale</b> (CPU): il cervello
+          
+          del computer, responsabile dell'esecuzione delle istruzioni
+          
+          dei programmi.
+          
+          
+          <b>Memorie</b>: sia <b>RAM</b>, per l’archiviazione temporanea dei dati,
+          sia dispositivi di memoria permanenti come SSD e HDD.
+          
+          <b>Dispositivi di output</b>: come monitor e stampanti, che permettono
+          
+          di visualizzare i dati elaborati.
+          
+          In sintesi, l’hardware fornisce la "struttura" necessaria affinché il
+          
+          software possa operare.
+          
+
+        </h3>
+        <div class="container1">
+          
+          <h2 id="Schede"> 1.1 Schede di espansione (componenti interne) :</h2>
+         <img src="scheda madre.jpeg" alt="errore" id="bord" ">
+          <p> La "scheda madre" è il cuore di un computer. Si tratta di una scheda di circuiti stampati
+  
   che collega i componenti principali del sistema. Ecco alcuni aspetti fondamentali della scheda madre:
-  <br>
+  
   1. <i>Processore</i> (CPU): Il processore, montato sulla scheda madre, funge da "cervello"
-  <br>
+  
   del computer, eseguendo istruzioni e calcoli.
-  <br>
+  
   2. <i>Ram</i>: La memoria ad accesso casuale (RAM) è collegata alla scheda madre e permette al
-  <br>
+  
   computer di memorizzare temporaneamente i dati durante l'uso.
-  <br>
-
-  <br>
-  
-  
-  </h3>
-  
-  <h2 id="cavi"> Cavi</h2>
-  <br>
-
-  <img src="cavi.jpg" style="width:550px; height:450px" id="bord" id="img">
-
-  <br>
-  <h3>
-
+</p>
+    
+          <p><strong>Esempi di schede di espansione:</strong></p>
+          <ul>
+            <li><strong>Scheda video (GPU):</strong> Migliora la grafica del computer, fondamentale per i giochi, il
+              design
+              e l'editing video. Le schede video moderne supportano tecnologie avanzate come il ray tracing e il
+              rendering
+              3D, migliorando
+              la qualità visiva e la fluidità delle immagini durante l'esecuzione di applicazioni grafiche e giochi ad
+              alta
+              intensità.
+            </li>
+            <li><strong>Scheda audio:</strong> Migliora la qualità del suono, utile per registrazioni audio o per
+              ascoltare
+              musica in alta qualità. Alcune schede audio offrono funzionalità come il surround sound e la riduzione del
+              rumore, permettendo una qualità audio migliore anche in ambienti con rumore esterno. Sono essenziali per i
+              professionisti del
+              suono, come i musicisti e i produttori di contenuti.
+            </li>
+            <li><strong>Scheda di rete (NIC):</strong> Permette di connettere il computer a Internet o a una rete
+              locale. Le
+              schede di rete possono supportare connessioni cablate (Ethernet) o wireless (Wi-Fi), consentendo una
+              comunicazione
+              rapida e stabile tra i dispositivi all'interno di una rete locale.
+            </li>
+            <li><strong>Scheda RAID:</strong> Gestisce più dischi rigidi o SSD per migliorare le prestazioni o la
+              sicurezza
+              dei dati. Il RAID può essere configurato per aumentare la velocità di lettura/scrittura o per creare copie
+              di
+              backup automatiche, migliorando la protezione dei dati in caso di guasto hardware.
+            </li>
+          </ul>
+    
+          <h2 id="cavi">1.2 Cavi :</h2>
+          <img src="cavi.jpg" alt="errore" id="bord" ">
+<p>
   I Cavi: Il Collegamento Fisico
-  <br>
+  
   I cavi sono i componenti fisici che permettono la connessione e la comunicazione tra i vari dispositivi hardware.
-  <br>
+  
   Senza di essi, molti dispositivi non potrebbero funzionare correttamente o scambiare dati. Esistono diversi tipi di cavi, ognuno con una funzione specifica:
-  <br>
+  
   
   Cavi di alimentazione: Forniscono energia ai dispositivi, come il cavo che collega il computer alla presa elettrica.
-  <br>
-  Cavi di dati: Trasmettono informazioni tra dispositivi, come i cavi USB, HDMI o Ethernet.
-  <br>
-  Cavi di rete: Collegamenti come i cavi Ethernet (RJ45) permettono la connessione a Internet o a reti locali.
-  <br>
-  Cavi audio/video: Trasmettono segnali audio e video, come i cavi HDMI o quelli per le cuffie.
-  <br>
-  I cavi sono essenziali per creare un'infrastruttura tecnologica funzionante, ma con l'avvento delle tecnologie wireless,
-  <br>
-  il loro ruolo sta gradualmente cambiando. Tuttavia, in molti contesti, i cavi rimangono indispensabili per garantire velocità, stabilità e sicurezza.
-  <br>
- 
-  </h3>
   
-  <h2 id="periferiche">periferiche</h2>
-  <h2 id="periferiche di input">Periferiche di Input</h2>
-  <br>
-
-    <h3>
-  Le periferiche di input sono dispositivi utilizzati per inserire dati e comandi nel computer.
+  Cavi di dati: Trasmettono informazioni tra dispositivi, come i cavi USB, HDMI o Ethernet.
+  
+  Cavi di rete: Collegamenti come i cavi Ethernet (RJ45) permettono la connessione a Internet o a reti locali.
+  
+  Cavi audio/video: Trasmettono segnali audio e video, come i cavi HDMI o quelli per le cuffie.
+  
+  I cavi sono essenziali per creare un'infrastruttura tecnologica funzionante, ma con l'avvento delle tecnologie wireless,
+  
+  il loro ruolo sta gradualmente cambiando. Tuttavia, in molti contesti, i cavi rimangono indispensabili per garantire velocità, stabilità e sicurezza.
+ 
+</p>
+    
+          <p><strong>Tipi di cavi:</strong></p>
+          <ul>
+            <li><strong>Cavo HDMI:</strong> Utilizzato per trasmettere segnali audio e video ad alta definizione tra dispositivi come computer, monitor e TV.</li>
+            <li><strong>Cavo USB:</strong> Utilizzato per collegare periferiche come tastiere, mouse, stampanti e dischi esterni al computer.</li>
+            <li><strong>Cavo Ethernet:</strong> Utilizzato per connettere dispositivi a una rete cablata, garantendo una connessione Internet stabile e veloce.</li>
+            <li><strong>Cavo di alimentazione:</strong> Fornisce energia elettrica a dispositivi come computer, monitor e stampanti.</li>
+          </ul>
+    
+          <h2 id="periferiche">1.3 Periferiche :</h2>
+        
+        <img src="periferiche.jpeg" alt="errore" id="bord" "> 
+          <p>
+          Le periferiche di input sono dispositivi utilizzati per inserire dati e comandi nel computer.
   <br>
   Alcuni esempi comuni includono:
   <br>
@@ -179,20 +185,10 @@
   4. <i>Microfono</i>: Utilizzato per l'input audio.
   <br>
   5. <i>Fotocamera</i>: Permette di acquisire immagini e video.
-  <br>
 
-  <br>
-  
-  
-  
-  </h3>
-  
-  
-  <h2 id="periferiche di output">Periferiche di Output</h2> 
-  <br>
-
-    <h3>
-  Le periferiche di output sono dispositivi che ricevono dati dal computer e li trasformano in una
+         </p>
+         <p>
+          Le periferiche di output sono dispositivi che ricevono dati dal computer e li trasformano in una
   <br>
   forma comprensibile per l'utente. Alcuni esempi comuni includono:
   <br>
@@ -205,57 +201,100 @@
   4. <i>Proiettore</i>: Mostra contenuti su una grande superficie, come uno schermo.
   <br>
   5. <i>Cuffie</i>: Offrono un'esperienza audio immersiva.
-  <br>
-
-  <br>
-
-  <img src="periferiche.jpeg" style="width:550px; height:450px" id="bord" id="img">
-
-  <br>
-    </h3>
-  <h2 id="software">Software</h2>
-  <br>
-  <h3>
-  2.<i>Software</i>:L’Intelligenza del Sistema
-  <br>
-</h3>
-  <img src="software.jpeg" style="width:550px; height:450px" id="bord" id="img">
-
-  <br>
-  <h3>
-
-  Il software, invece, rappresenta la componente "immateriale" che include
-  <br>
-  programmi e applicazioni che indicano all’hardware come comportarsi. Esso si divide in:
-  <br>
-  Software di sistema: come il sistema operativo (Windows, macOS, Linux) che
-  <br>
-  gestisce le risorse hardware e facilita l’interazione tra utente e macchina.
-  <br>
-  Software applicativo: come i browser, i programmi di videoscrittura, i videogiochi
-  <br>
-  e le app mobili, progettati per soddisfare esigenze specifiche dell'utente.
-  <br>
-  Software di sviluppo: utilizzato per creare altri software, come i linguaggi di
-  <br>
-  programmazione e gli ambienti di sviluppo integrato (IDE).
-  <br>
-  Il software è ciò che conferisce funzionalità all’hardware, traducendo le necessità
-  <br>
-  dell’utente in comandi eseguibili.
-  <br>
-
-  <br>
-  </h3>
   
-  <h2 id="firmware">Firmware</h2>
-  <br>
+         </p>
+    
+          <p><strong>Esempi di periferiche:</strong></p>
+    
+          <table ;border="1">
+            <thead>
+              <tr>
+                <th>Dispositivo O Periferica</th>
+                <th>Descrizione</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tastiera (Keyboard)</td>
+                <td class="td1">
+                  Per scrivere e interagire con il computer. Le tastiere moderne possono includere funzionalità come
+                  l'illuminazione RGB e tasti programmabili, adatti per i videogiocatori o professionisti che
+                  necessitano di
+                  comandi rapidi e personalizzati.
+                </td>
+              </tr>
+              <tr>
+                <td>Mouse</td>
+                <td class="td1">
+                  Per muovere il cursore e fare clic sugli elementi sullo schermo. I mouse possono essere ottici o
+                  laser,
+                  con funzionalità aggiuntive come la regolazione del DPI, che consente un controllo più preciso del
+                  cursore
+                  durante attività come il gaming o il design grafico.
+                </td>
+              </tr>
+              <tr>
+                <td>Monitor</td>
+                <td class="td1">
+                  Per visualizzare le immagini e le informazioni del computer. I monitor moderni offrono risoluzioni
+                  elevate, frequenze di aggiornamento rapide e tecnologie come l'HDR, migliorando l'esperienza visiva
+                  durante la navigazione, la visione di contenuti multimediali o il gioco.
+                </td>
+              </tr>
+              <tr>
+                <td>Stampante</td>
+                <td class="td1">
+                  Per stampare documenti. Le stampanti possono essere a getto d'inchiostro, laser o multifunzione, con
+                  capacità di scansione e copia, consentendo maggiore efficienza nelle attività d'ufficio e nella
+                  gestione
+                  dei documenti.
+                </td>
+              </tr>
+              <tr>
+                <td>Hard disk esterno</td>
+                <td class="td1">
+                  Per archiviare o trasferire dati. Gli hard disk esterni sono disponibili in diverse capacità e possono
+                  utilizzare connessioni USB, Thunderbolt o eSATA, rendendoli ideali per il backup di grandi quantità di
+                  dati o per il trasferimento rapido tra dispositivi.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div class="soft">
+        <h2>2. Software :</h2>
+        <img src="software.jpeg" alt="errore" id="bord" ">
+        <p>
+          Il software, invece, rappresenta la componente "immateriale" che include
+  
+  programmi e applicazioni che indicano all’hardware come comportarsi. Esso si divide in:
+  
+  Software di sistema: come il sistema operativo (Windows, macOS, Linux) che
+  
+  gestisce le risorse hardware e facilita l’interazione tra utente e macchina.
+  
+  Software applicativo: come i browser, i programmi di videoscrittura, i videogiochi
+  
+  e le app mobili, progettati per soddisfare esigenze specifiche dell'utente.
+  
+  Software di sviluppo: utilizzato per creare altri software, come i linguaggi di
+  
+  programmazione e gli ambienti di sviluppo integrato (IDE).
+  
+  Il software è ciò che conferisce funzionalità all’hardware, traducendo le necessità
+  
+  dell’utente in comandi eseguibili.
+ 
 
-  <img src="firmware.jpg" style="width:550px; height:450px"id="bord" id="img">
-
-  <br>
-    <h3>
-  Il Firmware: Il Software Nascosto
+        </p>
+    
+        <div class="container2">
+          <h2 id="firmware">2.1 Firmware :</h2>
+          <img src="firmware.jpg" alt="errore" id="bord" ">
+    <p>
+      Il Firmware: Il Software Nascosto
   <br>
   Il firmware è un tipo di software integrato direttamente nell'hardware, che funge da ponte tra il componente fisico e il sistema operativo.
   <br>
@@ -288,171 +327,398 @@
   a. POST (Power-On Self-Test)
   <br>
   All'accensione del computer, il BIOS esegue il POST, una serie di test diagnostici per verificare che tutti i componenti hardware (CPU, RAM, schede grafiche, dischi rigidi, ecc.) siano funzionanti.
-  <br>
+  
   Se viene rilevato un problema, il BIOS emette un segnale acustico (beep code) o un messaggio di errore per indicare il tipo di problema.
   <br>
   b. Inizializzazione dell'Hardware
   <br>
   Il BIOS configura e inizializza i componenti hardware, come la CPU, la RAM, i controller di memoria e i dispositivi di input/output.
-  <br>
+  
   Assegna risorse di sistema (es. indirizzi di memoria e interrupt) ai dispositivi hardware.
   <br>
   c. Caricamento del Sistema Operativo
   <br>
   Dopo aver completato il POST e l'inizializzazione dell'hardware, il BIOS cerca un dispositivo di avvio (es. disco rigido, SSD, USB o CD/DVD) contenente il sistema operativo.
-  <br>
+  
   Carica il bootloader, un piccolo programma che a sua volta carica il sistema operativo nella memoria RAM.
-  <br>
+  
   d. Interfaccia di Configurazione (BIOS Setup)
-  <br>
+
   Il BIOS fornisce un'interfaccia di configurazione (accessibile premendo un tasto specifico, come F2, Del o Esc, durante l'avvio) che permette agli utenti di modificare impostazioni hardware, come:
-  <br>
+  
   L'ordine di avvio (boot order).
-  <br>
+  
   La configurazione della memoria RAM.
-  <br>
+  
   Le impostazioni della CPU e della scheda grafica.
-  <br>
+  
   La gestione dell'alimentazione.
-  <br>
+  
   e. Gestione delle Impostazioni di Base
-  <br>
+  
   Il BIOS memorizza le impostazioni di configurazione in una memoria CMOS (alimentata da una batteria tampone), che include dati come data, ora e preferenze di sistema.
   <br>
   
   3. Architettura del BIOS
   <br>
   Memoria ROM/Flash: Il BIOS è memorizzato in un chip di memoria non volatile, che mantiene i dati anche quando il computer è spento.
-  <br>
+
   CMOS: Una piccola memoria volatile che memorizza le impostazioni di configurazione. È alimentata da una batteria tampone (solitamente una batteria a bottone CR2032).
-  <br>
+  
   Firmware: Il BIOS è un tipo di firmware, ovvero un software integrato direttamente nell'hardware.
   <br>
   4. Evoluzione del BIOS: UEFI
   <br>
   Il BIOS tradizionale è stato sostituito in molti computer moderni dall'UEFI (Unified Extensible Firmware Interface), che offre funzionalità avanzate:
-  <br>
+  
   
   Interfaccia grafica: L'UEFI supporta un'interfaccia utente più moderna e intuitiva.
-  <br>
+  
   Avvio più veloce: L'UEFI riduce i tempi di avvio rispetto al BIOS tradizionale.
-  <br>
+  
   Supporto per dischi di grandi dimensioni: L'UEFI supporta dischi rigidi con partizioni GPT (GUID Partition Table), che superano i limiti del BIOS (MBR).
-  <br>
+  
   Sicurezza avanzata: L'UEFI include funzionalità come Secure Boot, che impedisce l'esecuzione di software non autorizzato durante l'avvio.
   <br>
   5. Come Accedere al BIOS
-  <br>
+<br>
   Per accedere al BIOS, è necessario premere un tasto specifico durante l'avvio del computer. I tasti più comuni sono:
-  <br>
+
   
   F2, Del, Esc, F10 o F12 (dipende dal produttore della scheda madre).
-  <br>
-  Alcuni computer mostrano un messaggio come "Press [
-  <br>
-  <br>
-
-  <h2 id="sistema operativo">Sistema Operativo</h2>
-  <br>
-
-  <img src="sistema operativo.jpg" style="width:550px; height:450px" id="bord" id="img">
-
-  <br>
-
-    <h3>
-  Il Sistema Operativo: Il Cuore del Software
-  <br>
-  Il sistema operativo (OS) è il software principale che gestisce tutte le risorse hardware e software di un computer o dispositivo.
-  <br>
-  Senza un sistema operativo, un computer sarebbe solo un insieme di componenti inutilizzabili.
-  <br>
   
-  Funzioni principali:
-  <br>
-  Gestione delle risorse hardware (CPU, memoria, dispositivi di input/output).
-  <br>
-  Fornire un'interfaccia utente (grafica o a riga di comando).
-  <br>
-  Eseguire e gestire applicazioni.
-  <br>
-  Garantire la sicurezza e la stabilità del sistema.
-  <br>
-  Esempi di sistemi operativi:
-  <br>
-  
-  Windows: Il più diffuso per i PC, ideale per uso domestico e aziendale.
-  <br>
-  macOS: Il sistema operativo di Apple, noto per la sua integrazione con altri dispositivi Apple.
-  <br>
-  Linux: Un sistema open-source, ampiamente utilizzato in server e ambienti di sviluppo.
-  <br>
-  Android e iOS: I sistemi operativi dominanti per dispositivi mobili.
-  <br>
-  Il sistema operativo è il "traduttore" tra l'utente e l'hardware, rendendo possibile l'uso quotidiano dei dispositivi tecnologici.
-  <br>
+    </p>
+          <h2 id="sistemi-operativi">2.2 Sistemi Operativi :</h2>
+          <img src="sistema operativo.jpg" alt="errore" id="bord" ">
+    <p>
+      Il Sistema Operativo: Il Cuore del Software
+      
+      Il sistema operativo (OS) è il software principale che gestisce tutte le risorse hardware e software di un computer o dispositivo.
+      
+      Senza un sistema operativo, un computer sarebbe solo un insieme di componenti inutilizzabili.
+      
+      
+      Funzioni principali:
+      
+      Gestione delle risorse hardware (CPU, memoria, dispositivi di input/output).
+      
+      Fornire un'interfaccia utente (grafica o a riga di comando).
+      
+      Eseguire e gestire applicazioni.
+      
+      Garantire la sicurezza e la stabilità del sistema.
+      
+      Esempi di sistemi operativi:
+      
+      
+      Windows: Il più diffuso per i PC, ideale per uso domestico e aziendale.
+      
+      macOS: Il sistema operativo di Apple, noto per la sua integrazione con altri dispositivi Apple.
+      
+      Linux: Un sistema open-source, ampiamente utilizzato in server e ambienti di sviluppo.
+      
+      Android e iOS: I sistemi operativi dominanti per dispositivi mobili.
+      
+      Il sistema operativo è il "traduttore" tra l'utente e l'hardware, rendendo possibile l'uso quotidiano dei dispositivi tecnologici.
+    
+    </p>
+          <h2 id="applicazioni">2.3 Applicazioni :</h2>
+        <img src="applicazioni.jpg" alt="errore" id="bord" ">
+          <p>
+            Le applicazioni sono programmi software progettati per eseguire compiti specifici, come la navigazione web,
+            l'elaborazione di testi, la gestione di fogli di calcolo o il gioco. Possono essere installate sul sistema
+            operativo e sono utilizzate direttamente dagli utenti per svolgere attività quotidiane. Le applicazioni possono
+            essere di vari tipi, tra cui:
+            <ul>
+              <li><strong>Applicazioni desktop:</strong> Programmi installati su un computer, come Microsoft Word o Adobe Photoshop.</li>
+              <li><strong>Applicazioni web:</strong> Programmi accessibili tramite un browser, come Gmail o Google Docs.</li>
+              <li><strong>Applicazioni mobili:</strong> Programmi progettati per dispositivi mobili, come Instagram o WhatsApp.</li>
+              <li><strong>Applicazioni aziendali:</strong> Software utilizzati per gestire operazioni aziendali, come ERP o CRM.</li>
+            </ul>
 
-  <br>
-  </h3>
-  <h2 id="applicazioni">Applicazioni</h2>
-  <br>
+            <h4 style="color: white; size: 5px;">
+              Le applicazioni sono sviluppate per soddisfare esigenze specifiche degli utenti e possono essere personalizzate in base alle preferenze o ai requisiti aziendali.
+            </h4>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    
 
-  <img src="applicazioni.jpg" style="width:550px; height:450px" id="bord" id="img">
 
-  <br>
-  <h3>
+    <i class="fas fa-arrow-up arrow-up" onclick="scrollToTop()"></i>
 
-  Le Applicazioni: Strumenti per Ogni Esigenza
-  <br>
-  Le applicazioni (o software applicativi) sono programmi progettati per svolgere compiti specifici, rispondendo alle esigenze degli utenti.
-  <br>
-  Possono essere utilizzate per lavoro, studio, intrattenimento o comunicazione.
-  <br>
-  
-  Tipi di applicazioni:
-  <br>
-  Produttività: Programmi come Microsoft Office, Google Docs o LibreOffice per creare documenti, fogli di calcolo e presentazioni.
-  <br>
-  Comunicazione: App come WhatsApp, Zoom o Slack per la messaggistica e le videochiamate.
-  <br>
-  Intrattenimento: Giochi, piattaforme di streaming (Netflix, Spotify) o app per la lettura.
-  <br>
-  E-Learning: Piattaforme come Moodle, Duolingo o Coursera per l'apprendimento online.
-  <br>
-  E-Commerce: Applicazioni come Amazon, eBay o Shopify per acquistare e vendere prodotti online
-  <br>
+    <script>
 
-  <br>
-  </h3>
-  <a href="indice.html" id="indice"><h3>vai alla pagina indice</h3></a>
-  </style>
-  <a href="#inizio" id="capitolo2"><h3>Torna all'inizio</h3></a>
-  </body>
-  <style>
-    h1 {
-color: white;
-text-align: center;
-}
-      #indice{
-        position:fixed;
-            top:40px;
-            right:10px;
-      }
-        #capitolo2{
-            position:fixed;
-            top:5px;
-            right:10px;
+      function toggleMenu() {
+        const navbar = document.getElementById("navbar");
+        if (navbar.style.display === "none" || navbar.style.display === "") {
+          navbar.style.display = "flex";
+        } else {
+          navbar.style.display = "none";
         }
-        div
-          {
-            border: 8px solid black;
-            border-radius: 25px;
-            position: relative;
-            margin-left: 380px;
-            margin-right: 420px ;
-            font-weight: bold;
-            box-shadow: 5px 10px #888888;
-          }
-        #bord {
+      }
+
+
+      document.addEventListener('click', function (event) {
+        const navbar = document.getElementById("navbar");
+        const menuButton = document.getElementById("menu-button");
+
+
+        if (!navbar.contains(event.target) && !menuButton.contains(event.target)) {
+          navbar.style.display = "none";
+        }
+      });
+
+
+      const links = document.querySelectorAll('#navbar a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const navbar = document.getElementById("navbar");
+          navbar.style.display = "none";
+        });
+      });
+
+      function toggleSection(section) {
+
+        const hardware = document.querySelector('.hardware');
+        const soft = document.querySelector('.soft');
+
+        if (section === 'hardware') {
+          hardware.style.display = 'block';
+          soft.style.display = 'none';
+        } else {
+          hardware.style.display = 'none';
+          soft.style.display = 'block';
+        }
+      }
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+</body>
+
+</html>
+<style>
+  body {
+  background-color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0px;
+}
+
+.button {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background: linear-gradient(45deg, #5a5a5a, #757575);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  color: red;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+#menu-button {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#navbar {
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  font-size: 16px;
+}
+
+#navbar a:hover {
+  background-color: #555;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 450px;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0, 0;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hardware,
+.soft {
+  width: auto;
+  padding: 10px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+img {
+  width: 450px;
+  height: auto;
+  margin: 0 20px;
+}
+
+p {
+    border: 0px solid transparent;
+margin-right: 50px;
+    text-align: center;
+  color: black;
+}
+
+ul {
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd86;
+  padding: 8px ;
+  text-align: left;
+
+}
+th {
+  background-color: #f4f4f452;
+}
+
+.arrow-up {
+  font-size: 50px; 
+  color: #007bff; 
+  cursor: pointer; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+}
+
+.arrow-up:hover {
+  color: #0056b3; 
+}
+
+.td1{
+  color: white;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 10px 5px;
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0056b3; 
+}
+
+
+.hardware.active, .soft.active {
+  display: block;
+}
+
+.hardware, .soft {
+  display: none; 
+}
+
+.hardware{
+  display: block;
+}
+
+.soft{
+  display: none;
+}
+#bord {
           border-color: black;
           border-style: groove;
           border-width: 10px;
@@ -461,11 +727,7 @@ text-align: center;
           padding: 0px;
           border-radius: 8px;
         }
-        body {
-      background-image: url(background.jpeg); 
-      color: white
-    }
-    img:hover {
+        img:hover {
             animation: shake 0.5s;
             animation-iteration-count: infinite;
             }
@@ -483,5 +745,4 @@ text-align: center;
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
                         }
-    </style>
-  
+</style>

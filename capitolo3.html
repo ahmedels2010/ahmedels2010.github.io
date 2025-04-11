@@ -1,449 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPITOLO3</title>
+    <link rel="stylesheet" href="css/capitolo3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
 <body>
+    <div class="button">
+        <a href="copertina.html" class="btn"><i class="fas fa-home"></i> COPERTINA</a>
+        <a href="indice.html" class="btn"><i class="fas fa-list"></i> INDICE</a>
+        <a href="capitolo1.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 1</a>
+        <a href="capitolo2.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 2</a>
+        <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
+        <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
+        <a href="capitolo5.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+    </div>
 
-<h1 id="inizio">CODIFICHE:</h1>
-<div>
-<h3>
-<br>
-Le codifiche dell'informazione lo possiamo deviderein due gruppi:
-<br>
-1^gruppo
-<ul>
-	<li><a href="#testi"><i>testi</i></a></li>
-    <li><a href="#immagini"><i>immagini</i></a></li>
-	<li><a href="#audio"><i>audio</i></a></li>
-   <li><a href="#video"><i>video</i></a></li>
-</ul>
-2^gruppo 
-<ul>
-   <li><a href="#numeri"><i>numeri</i></a></li>
-</ul>
-<br>
+    <div id="menu-button" onclick="toggleMenu()">☰</div>
+    <div id="navbar">
+        <a href="#testi">Testi</a>      
+        <a href="#IMMAGINI">Immagini</a>
+        <a href="#AUDIO">Audio</a>
+        <a href="#VIDEO">Video</a>
+        <a href="#NUMERI">Numeri</a>
+    </div>
 
-<h2 id="testi"><i>TESTI</i></h2>
-<br>
+    <h1> CAPITOLO 3 :</h1>
+    <div class="image-container">
+      
+    </div>
+    <h1>CODIFICHE :</h1>
 
-<img src="codifica del testo.jpeg" alt="Codifica del testo" id="bord">
+    <h2 id="testi">1. Testi :</h2>
+    <div class="image-container">
+        <img src="codifica del testo.jpeg" alt="errore" class="small-img" id="bord">
+    </div>
+    <p>
+       
+      ASCII e Unicode sono essenziali per la rappresentazione 
+     
+      dei caratteri nei sistemi informatici.
+     
+      <b>ASCII</b> (American Standard Code for Information Interchange)
+    
+      - Sviluppato negli anni '60, ASCII è stato creato come standard
+      
+      per la rappresentazione dei caratteri nel testo per computer e 
 
-<br>
-<h3>
-ASCII e Unicode sono essenziali per la rappresentazione 
-<br>
-dei caratteri nei sistemi informatici.
-<br>
-<b>ASCII</b> (American Standard Code for Information Interchange)
-<br>
-- Sviluppato negli anni '60, ASCII è stato creato come standard
-<br>
-per la rappresentazione dei caratteri nel testo per computer e 
-<br>
-telecomunicazioni.
-<br>
-- Comprende un set di 128 simboli, che include lettere maiuscole
-<br>
-e minuscole, numeri, segni di punteggiatura e caratteri di controllo.
-<br>
-- Ogni carattere ASCII è rappresentato da un numero decimale che va da 0 a 127.
-<br>
-- Ad esempio, il carattere 'A' corrisponde al numero 65, mentre 'a' è
-<br>
-rappresentato dal numero 97.
-<br>
-- Semplicità: È facilmente interpretabile e ampiamente utilizzato per 
-<br>
-comunicazioni di base.
-<br>
-- Limitazioni: Non supporta caratteri non latini, simboli speciali o 
-<br>
-lingue con set di caratteri più ampi.
-<br>
+      telecomunicazioni.
 
-<b>Unicode</b>
-<br>
-- Unicode è stato creato per superare le limitazioni di ASCII, permettendo 
-<br>
-la rappresentazione di caratteri da tutte le lingue e simboli usati nel mondo.
-<br>
-- Si tratta di un sistema di codifica molto più ampio, che include oltre 
-<br>
-143.000 caratteri.
-<br>
+      - Comprende un set di 128 simboli, che include lettere maiuscole
+      
+      e minuscole, numeri, segni di punteggiatura e caratteri di controllo.
+    
+      - Ogni carattere ASCII è rappresentato da un numero decimale che va da 0 a 127.
+     
+      - Ad esempio, il carattere 'A' corrisponde al numero 65, mentre 'a' è
+     
+      rappresentato dal numero 97.
+      
+      - Semplicità: È facilmente interpretabile e ampiamente utilizzato per 
+      
+      comunicazioni di base.
+      
+      - Limitazioni: Non supporta caratteri non latini, simboli speciali o 
+      
+      lingue con set di caratteri più ampi.
+     
+      
+      <b>Unicode</b>
+    
+      - Unicode è stato creato per superare le limitazioni di ASCII, permettendo 
+    
+      la rappresentazione di caratteri da tutte le lingue e simboli usati nel mondo.
+      
+      - Si tratta di un sistema di codifica molto più ampio, che include oltre 
+      
+      143.000 caratteri.
+      
+      
+      - Universalità: Supporta praticamente tutte le lingue e simboli globali, 
+      
+      comprese emoji e simboli matematici.
+    
+      <b>Confronto tra ASCII e Unicode</b>
+     
+      Compatibilità:
+    
+      - ASCII è limitato a un set di caratteri di base, mentre Unicode può rappresentare
+    
+      una vasta gamma di caratteri globali.
+      
+      - Unicode in UTF-8 mantiene la compatibilità con ASCII, facilitando la transizione.
+      
+      Utilizzo:
+     
+      - ASCII è ancora utilizzato in contesti semplici dove è necessario un supporto minimo 
+      
+      dei caratteri.
+      
+      - Unicode è preferito nelle applicazioni moderne che richiedono supporto multilingue 
+      
+      e simboli complessi.
+      
+      
+      <b>Conclusione</b>
+     
+      Le codifiche dei testi, con ASCII che rappresenta la semplicità e la standardizzazione 
+     
+      iniziale, e Unicode che offre universalità e flessibilità, sono fondamentali per 
+     
+      la comunicazione digitale di oggi. Mentre ASCII ha un ruolo storico e specifico,
+     
+      Unicode è diventato il gold standard per la rappresentazione dei testi nel mondo
+    
+      interconnesso e multilingue attuale.
+     
+      
+      ASCII, o American Standard Code for Information Interchange,
+     
+      è un sistema di codifica dei caratteri utilizzato in informatica
+      
+      e telecomunicazioni. Questo codice è stato creato per permettere 
+    
+      la rappresentazione di testi e simboli attraverso computer e altri 
+      
+      dispositivi digitali.
+     
+      <b>Come Funziona l'ASCII</b>
+      
+      ASCII impiega una serie di numeri da 0 a 127 per rappresentare lettere,
+   
+      numeri e simboli. Ogni carattere è associato a un numero decimale,
+      
+      facilmente convertibile in codici binari, che i computer utilizzano per 
+      
+      memorizzare e gestire i dati.
+   
+      <b>Esempi di Caratteri ASCII:</b>
+    >
+      <table>
+      <tr>
+         <th>Lettere Maiuscole</th>
+         <th>Valore ASCII</th>
+      </tr>
+      <tr>
+       <td>A</td>
+         <td>65</td>
+      </tr>
+      <tr>
+       <td>B</td>
+         <td>66</td>
+      
+      </tr>
+      <tr>
+       <td>... Z</td>
+         <td>90</td>
+      </tr>
+      </table>
+      <br>
+      <table>
+         <tr>
+         <th>Lettere Minuscole</th>
+         <th>Valore ASCII</th>
+         </tr>
+      <tr>
+       <td>a</td>
+         <td>97</td>
+      </tr>
+      <tr>
+       <td>b</td>
+         <td>98</td>
+      </tr>
+      <tr>
+       <td>... z</td>
+         <td>122</td>
+      </tr>
+      </table>
+      <br>
+      <table>
+          <tr>
+         <th>Numeri</th>
+         <th>Valore ASCII</th>
+         </tr>
+      <tr>
+       <td>0</td>
+         <td>48</td>
+      </tr>
+      <tr>
+       <td>1</td>
+         <td>49</td>
+      </tr>
+      <tr>
+       <td>... 9</td>
+         <td>57</td>
+      </tr>
+      </table>
+      <br>
+      <table>
+         <tr>
+         <th>Simboli</th>
+         <th>Valore ASCII</th>
+         </tr>
+      <tr>
+       <td>@</td>
+         <td>64</td>
+      </tr>
+      <tr>
+       <td>&</td>
+         <td>38</td>
+      </tr>
+      <tr>
+       <td>... $</td>
+         <td>36</td>
+      </tr>
+      </table>
+      <br>
+      <style>
+      table {
+          border-style: solid;
+          border-width: 1px;
+          border-color: black;
+           border-collapse: collapse;
+      }
+        
+        td,th {
+          border-style: solid;
+          border-width: 1px;
+          border-color: black;
+            border-collapse: collapse;
+        }
+        
+      </style>
+     
+      <b>Importanza Storica</b>
+     
+      Prima dell'adozione diffusa di ASCII, non c'era uno standard comune per  
+  
+      la codifica dei testi nei computer, il che complicava la comunicazione e 
+    
+      lo scambio di dati tra sistemi diversi. ASCII ha standardizzato questo processo,
+    
+      rendendo più semplice lo sviluppo dell'informatica moderna.
 
-- Universalità: Supporta praticamente tutte le lingue e simboli globali, 
-<br>
-comprese emoji e simboli matematici.
-<br>
-<b>Confronto tra ASCII e Unicode</b>
-<br>
-Compatibilità:
-<br>
-- ASCII è limitato a un set di caratteri di base, mentre Unicode può rappresentare
-<br>
-una vasta gamma di caratteri globali.
-<br>
-- Unicode in UTF-8 mantiene la compatibilità con ASCII, facilitando la transizione.
-<br>
-Utilizzo:
-<br>
-- ASCII è ancora utilizzato in contesti semplici dove è necessario un supporto minimo 
-<br>
-dei caratteri.
-<br>
-- Unicode è preferito nelle applicazioni moderne che richiedono supporto multilingue 
-<br>
-e simboli complessi.
-<br>
-
-<b>Conclusione</b>
-<br>
-Le codifiche dei testi, con ASCII che rappresenta la semplicità e la standardizzazione 
-<br>
-iniziale, e Unicode che offre universalità e flessibilità, sono fondamentali per 
-<br>
-la comunicazione digitale di oggi. Mentre ASCII ha un ruolo storico e specifico,
-<br>
-Unicode è diventato il gold standard per la rappresentazione dei testi nel mondo
-<br>
-interconnesso e multilingue attuale.
-<br>
-
-ASCII, o American Standard Code for Information Interchange,
-<br>
-è un sistema di codifica dei caratteri utilizzato in informatica
-<br>
-e telecomunicazioni. Questo codice è stato creato per permettere 
-<br>
-la rappresentazione di testi e simboli attraverso computer e altri 
-<br>
-dispositivi digitali.
-<br>
-<b>Come Funziona l'ASCII</b>
-<br>
-ASCII impiega una serie di numeri da 0 a 127 per rappresentare lettere,
-<br>
-numeri e simboli. Ogni carattere è associato a un numero decimale,
-<br>
-facilmente convertibile in codici binari, che i computer utilizzano per 
-<br>
-memorizzare e gestire i dati.
-<br>
-<b>Esempi di Caratteri ASCII:</b>
-<br>
-<table>
-<tr>
-   <th>Lettere Maiuscole</th>
-   <th>Valore ASCII</th>
-</tr>
-<tr>
- <td>A</td>
-   <td>65</td>
-</tr>
-<tr>
- <td>B</td>
-   <td>66</td>
-
-</tr>
-<tr>
- <td>... Z</td>
-   <td>90</td>
-</tr>
-</table>
-<br>
-<table>
-   <tr>
-   <th>Lettere Minuscole</th>
-   <th>Valore ASCII</th>
-   </tr>
-<tr>
- <td>a</td>
-   <td>97</td>
-</tr>
-<tr>
- <td>b</td>
-   <td>98</td>
-</tr>
-<tr>
- <td>... z</td>
-   <td>122</td>
-</tr>
-</table>
-<br>
-<table>
-    <tr>
-   <th>Numeri</th>
-   <th>Valore ASCII</th>
-   </tr>
-<tr>
- <td>0</td>
-   <td>48</td>
-</tr>
-<tr>
- <td>1</td>
-   <td>49</td>
-</tr>
-<tr>
- <td>... 9</td>
-   <td>57</td>
-</tr>
-</table>
-<br>
-<table>
-   <tr>
-   <th>Simboli</th>
-   <th>Valore ASCII</th>
-   </tr>
-<tr>
- <td>@</td>
-   <td>64</td>
-</tr>
-<tr>
- <td>&</td>
-   <td>38</td>
-</tr>
-<tr>
- <td>... $</td>
-   <td>36</td>
-</tr>
-</table>
-<br>
-<style>
-table {
-		border-style: solid;
-		border-width: 1px;
-		border-color: black;
-	   border-collapse: collapse;
-}
-	
-	td,th {
-		border-style: solid;
-		border-width: 1px;
-		border-color: black;
-      border-collapse: collapse;
-	}
-	
-</style>
-<br>
-<b>Importanza Storica</b>
-<br>
-Prima dell'adozione diffusa di ASCII, non c'era uno standard comune per  
-<br>
-la codifica dei testi nei computer, il che complicava la comunicazione e 
-<br>
-lo scambio di dati tra sistemi diversi. ASCII ha standardizzato questo processo,
-<br>
-rendendo più semplice lo sviluppo dell'informatica moderna.
-<br>
-<b>Utilizzo nella Tastiera</b>
-<br>
-Sulla tastiera, ogni tasto corrisponde a uno o più codici ASCII. Ad esempio,
-<br>
-premendo il tasto "A", si invia il codice 65 al computer, che lo interpreta 
-<br>
-e visualizza la lettera "A" sullo schermo. Questo consente la digitazione e
-<br>
-la comunicazione digitale come la conosciamo oggi.
-<br>
-ASCII ha costituito la base per molte altre codifiche di caratteri che sono seguite,
-<br>
-come Unicode, che amplia la rappresentazione dei caratteri a una vasta gamma 
-<br>
-di simboli utilizzati in tutto il mondo.
-<br>
-
-<br>
-
-</h3>
-
-<h2 id="immagini"><i>Immagini</i></h2> 
-<br>
-<h3>
-<h2>Bit e Pixel</h2>
-<br>
-
-<img src="codifica dell'immagine.jpeg" alt="Codifica dell'immagine"id="bord">
-
-<br>
-<h2>Bit:</h2>
-<br>
-<ul>
-   <li>Un bit è l'unità fondamentale di informazione nei computer, capace di assumere solo due valori: 0 o 1.</li>
-   <li>Combinando più bit, si possono rappresentare informazioni più complesse. Ad esempio:</li> 
-</ul>
-<br>
-<ol>
-   <li>1 bit può rappresentare 2 valori (0 o 1).</li> 
-   <li>2 bit possono rappresentare 4 valori (00, 01, 10, 11).</li>
-   <li>8 bit formano un byte, che può rappresentare 256 valori diversi.</li>
-</ol>
-<br>
-<h2>Pixel:</h2>
-<br>
-<ul>
-<li>Un pixel è l'unità più piccola di un'immagine digitale.</li>
-<li>Ogni pixel è definito da una combinazione di bit che ne determina il colore.</li>
-</ul>
-<br>
-<b>Profondità del Colore</b>
-<br>
-La profondità del colore indica il numero di bit utilizzati per rappresentare il colore
-di un singolo pixel. Maggiore è la profondità del colore, più colori possono essere visualizzati.
-<br>
-<ul>
-   <li>1-bit (Monocromatico): Può rappresentare solo 2 colori, di solito bianco e nero.</li> 
-   <li>8-bit: Può rappresentare 256 colori.</li>
-   <li>16-bit: Può rappresentare 65.536 colori.</li>
-   <li>24-bit (True Color): Può rappresentare circa 16,7 milioni di colori,
-       utilizzando 8 bit per ciascun canale di colore (rosso, verde, blu).</li>
-   <li>32-bit: Simile al 24-bit, ma con un canale aggiuntivo per la trasparenza (canale alpha).</li> 
-</ul>
-<br>
-<b>Codifica delle Immagini</b>
-<br>
-Quando un'immagine viene codificata, ogni pixel è rappresentato da una combinazione di bit che definisce il suo colore.
-<br>
-<b>Esempio di Codifica RGB:</b>
-<br>
-<ul>
- <li>In un'immagine a 24 bit, ogni pixel è rappresentato da tre canali di 8 bit, uno per ogni colore primario (rosso, verde, blu).</li>   
- <li>Ad esempio, un pixel rosso puro può essere rappresentato come:</li>  
-</ul>
-<br>
-<ul>
-   <li>Rosso: 255 (11111111 in binario)</li> 
-   <li>Verde: 0 (00000000 in binario)</li> 
-   <li>Blu: 0 (00000000 in binario)</li>
-</ul>
-<br>
-<b>Esempio di Codifica PNG:</b>
-<br>
-<ul>
-<li>In un'immagine PNG a 32 bit, i primi 24 bit definiscono il colore RGB del pixel,
-    mentre gli ultimi 8 bit rappresentano il canale alpha per la trasparenza.</li>    
-</ul>
-<br>
-<table>
-<tr>
-	<th>IMMAGINE</th>
-    <th>RISOLUZIONE</th>
-    <th>PROFONDITÀ</th>
-    <th>OCCUPAZIONE MEMORIA</th>
-</tr>
-<tr>
-    <td>B/N</td>
-    <td>1024×740</td>
-    <td>1</td>
-    <td>1024×740×1 bit</td>
-</tr>
-<tr>
-    <td>GRIGIO</td>
-    <td>1024×740</td>
-    <td>8</td>
-    <td>1024×740×8 bit</td>
-</tr>
-<tr>
-    <td>RADIO</td>
-    <td>1024×740</td>
-    <td>16</td>
-    <td>1024×740×16 bit</td>
-</tr>
-<tr>
-    <td>COLORE (RGB)</td>
-    <td>1024×740</td>
-    <td>24</td>
-    <td>1024×740×24 bit</td>
-</tr>
-<tr>
-    <td>COLORE AQ</td>
-    <td>1024×740</td>
-    <td>48</td>
-    <td>1024×740×48 bit</td>
-</tr>
-</table>
-<br>
-<style>
-   table  {
-      border-style: solid;
-      border-width: 4px;
-      border-color: white;
-      border-collapse: collapse;
-          }
-   td, th {
-      border-style: solid;
-      border-width: 4px;
-		border-color: white;
-          }
-</style>
-<h2>codifiche vettoriale</h2>
-La codifica vettoriale dell'immagine è un metodo utiizzato per rappresentare le immagine attaverso elemnti geometrici
-come punti, linee, curve, poligoni.
-Le caratterestiche principali della  codfica vettoriale sono:
-<ul>
+      <b>Utilizzo nella Tastiera</b>
+    
+      Sulla tastiera, ogni tasto corrisponde a uno o più codici ASCII. Ad esempio,
+    
+      premendo il tasto "A", si invia il codice 65 al computer, che lo interpreta 
+     
+      e visualizza la lettera "A" sullo schermo. Questo consente la digitazione e
+   
+      la comunicazione digitale come la conosciamo oggi.
+   
+      ASCII ha costituito la base per molte altre codifiche di caratteri che sono seguite,
+      
+      come Unicode, che amplia la rappresentazione dei caratteri a una vasta gamma 
+     
+      di simboli utilizzati in tutto il mondo.
+      
 
 
-<ol> 1-Scalabilità: Le immagini vettoriali possono essere scalate a qualsiasi dimensione senza perdita di qualità.
- Questo perché sono basate su formule matematiche e non su pixel.</ol> 
-<ol> 2-File di dimensioni ridotte: I file vettoriali tendono ad essere meno pesanti rispetto ai file raster,
- soprattutto per immagini con aree estese di colore uniforme.</ol>
-<ol> 3-Modificabilità: Gli elementi delle immagini vettoriali possono essere facilmente modificati senza influenzare
- l'intera immagine. Ogni elemento è indipendente.</ol>
-</ul>
-Formati Comuni
-<ul>
-<li> SVG (Scalable Vector Graphics)*: Un formato di file molto popolare e basato su XML.</li>
-<li> EPS (Encapsulated PostScript)*: Utilizzato soprattutto per la stampa.</li>
-<li> PDF (Portable Document Format)*: Può contenere sia grafica vettoriale che raster.</li>
-</ul>
-</h3>
+</p>
+    <h2 id="IMMAGINI">3. IMMAGINI :</h2>
+    <div class="image-container">
+        <img src="codifica dell'immagine.jpeg" alt="errore" class="small-img" id="bord">
+    </div>
+    <h2> Bit e Pixel</h2>
+    <p>
+       
+      <h2>Bit:</h2>
+      <br>
+      <ul>
+         <li>Un bit è l'unità fondamentale di informazione nei computer, capace di assumere solo due valori: 0 o 1.</li>
+         <li>Combinando più bit, si possono rappresentare informazioni più complesse. Ad esempio:</li> 
+      </ul>
+      <br>
+      <ol>
+         <li>1 bit può rappresentare 2 valori (0 o 1).</li> 
+         <li>2 bit possono rappresentare 4 valori (00, 01, 10, 11).</li>
+         <li>8 bit formano un byte, che può rappresentare 256 valori diversi.</li>
+      </ol>
+      <br>
+      <h2>Pixel:</h2>
+      <br>
+      <ul>
+      <li>Un pixel è l'unità più piccola di un'immagine digitale.</li>
+      <li>Ogni pixel è definito da una combinazione di bit che ne determina il colore.</li>
+      </ul>
+      <br>
+      <b>Profondità del Colore</b>
+      <br>
+      La profondità del colore indica il numero di bit utilizzati per rappresentare il colore
+      di un singolo pixel. Maggiore è la profondità del colore, più colori possono essere visualizzati.
+      <br>
+      <ul>
+         <li>1-bit (Monocromatico): Può rappresentare solo 2 colori, di solito bianco e nero.</li> 
+         <li>8-bit: Può rappresentare 256 colori.</li>
+         <li>16-bit: Può rappresentare 65.536 colori.</li>
+         <li>24-bit (True Color): Può rappresentare circa 16,7 milioni di colori,
+             utilizzando 8 bit per ciascun canale di colore (rosso, verde, blu).</li>
+         <li>32-bit: Simile al 24-bit, ma con un canale aggiuntivo per la trasparenza (canale alpha).</li> 
+      </ul>
+      <br>
+      <b>Codifica delle Immagini</b>
+      <br>
+      Quando un'immagine viene codificata, ogni pixel è rappresentato da una combinazione di bit che definisce il suo colore.
+      <br>
+      <b>Esempio di Codifica RGB:</b>
+      <br>
+      <ul>
+       <li>In un'immagine a 24 bit, ogni pixel è rappresentato da tre canali di 8 bit, uno per ogni colore primario (rosso, verde, blu).</li>   
+       <li>Ad esempio, un pixel rosso puro può essere rappresentato come:</li>  
+      </ul>
+      <br>
+      <ul>
+         <li>Rosso: 255 (11111111 in binario)</li> 
+         <li>Verde: 0 (00000000 in binario)</li> 
+         <li>Blu: 0 (00000000 in binario)</li>
+      </ul>
+      <br>
+      <b>Esempio di Codifica PNG:</b>
+      <br>
+      <ul>
+      <li>In un'immagine PNG a 32 bit, i primi 24 bit definiscono il colore RGB del pixel,
+          mentre gli ultimi 8 bit rappresentano il canale alpha per la trasparenza.</li>    
+      </ul>
+      <br>
+      <table>
+      <tr>
+        <th>IMMAGINE</th>
+          <th>RISOLUZIONE</th>
+          <th>PROFONDITÀ</th>
+          <th>OCCUPAZIONE MEMORIA</th>
+      </tr>
+      <tr>
+          <td>B/N</td>
+          <td>1024×740</td>
+          <td>1</td>
+          <td>1024×740×1 bit</td>
+      </tr>
+      <tr>
+          <td>GRIGIO</td>
+          <td>1024×740</td>
+          <td>8</td>
+          <td>1024×740×8 bit</td>
+      </tr>
+      <tr>
+          <td>RADIO</td>
+          <td>1024×740</td>
+          <td>16</td>
+          <td>1024×740×16 bit</td>
+      </tr>
+      <tr>
+          <td>COLORE (RGB)</td>
+          <td>1024×740</td>
+          <td>24</td>
+          <td>1024×740×24 bit</td>
+      </tr>
+      <tr>
+          <td>COLORE AQ</td>
+          <td>1024×740</td>
+          <td>48</td>
+          <td>1024×740×48 bit</td>
+      </tr>
+      </table>
+      <br>
+      <style>
+         table  {
+            border-style: solid;
+            border-width: 4px;
+            border-color: white;
+            border-collapse: collapse;
+                }
+         td, th {
+            border-style: solid;
+            border-width: 4px;
+          border-color: white;
+                }
+      </style>
+      <h2>codifiche vettoriale</h2>
+      La codifica vettoriale dell'immagine è un metodo utiizzato per rappresentare le immagine attaverso elemnti geometrici
+      come punti, linee, curve, poligoni.
+      Le caratterestiche principali della  codfica vettoriale sono:
+      <ul>
+      
+      
+      <ol> 1-Scalabilità: Le immagini vettoriali possono essere scalate a qualsiasi dimensione senza perdita di qualità.
+       Questo perché sono basate su formule matematiche e non su pixel.</ol> 
+      <ol> 2-File di dimensioni ridotte: I file vettoriali tendono ad essere meno pesanti rispetto ai file raster,
+       soprattutto per immagini con aree estese di colore uniforme.</ol>
+      <ol> 3-Modificabilità: Gli elementi delle immagini vettoriali possono essere facilmente modificati senza influenzare
+       l'intera immagine. Ogni elemento è indipendente.</ol>
+      </ul>
+      Formati Comuni
+      <ul>
+      <li> SVG (Scalable Vector Graphics)*: Un formato di file molto popolare e basato su XML.</li>
+      <li> EPS (Encapsulated PostScript)*: Utilizzato soprattutto per la stampa.</li>
+      <li> PDF (Portable Document Format)*: Può contenere sia grafica vettoriale che raster.</li>
+      </ul>
 
-<br>
-<h2 id="audio"><i>Audio</i></h2>
+    </p>
 
-   <h3>
-<img src="audiocod.jpeg"style="width:550px; height:450px" id="bord">
-La codifica audio è il processo che trasforma i segnali audio analogici in un formato digitale,
- permettendo così la loro memorizzazione, trasmissione e riproduzione su dispositivi digitali.
-  Questo processo è fondamentale per la diffusione di audio su internet, la produzione musicale
-   e in molti altri contesti.
+    <h2 id="AUDIO">4. AUDIO :</h2>
+    <div class="image-container">
+        <img src="audiocod.jpeg" alt="errore" class="small-img" id="bord">
+    </div>
+    <p>
+      La codifica audio è il processo che trasforma i segnali audio analogici in un formato digitale,
+      permettendo così la loro memorizzazione, trasmissione e riproduzione su dispositivi digitali.
+       Questo processo è fondamentale per la diffusione di audio su internet, la produzione musicale
+        e in molti altri contesti.
 <br>
-Principi Fondamentali
-1. Campionamento: Il primo passo nella codifica audio è il campionamento, che consiste nella
-misurazione del segnale audio analogico a intervalli regolari. La frequenza di campionamento,
-espressa in Hertz (Hz), indica quante volte al secondo il segnale viene campionato. Ad esempio,
-una frequenza di campionamento di 44.1 kHz significa che il segnale è campionato 44.100 volte al secondo.
-<br>
-2. Quantizzazione: Dopo il campionamento, il segnale analogico viene convertito in un formato 
-numerico attraverso la quantizzazione. Questo processo prevede l'assegnazione di valori discreti 
-a ciascun campione. Una maggiore precisione nella quantizzazione porta a una qualità del suono 
-migliore, ma richiede anche una maggiore quantità di dati.
-<br>
-3. Codifica: Una volta quantizzati, i campioni vengono codificati in formato binario utilizzando 
-codec audio. Codec come MP3, AAC e FLAC determinano il modo in cui i dati vengono compressi e memorizzati. 
-La compressione può essere lossy (con perdita di dati, come nel caso di MP3) o lossless (senza perdita di dati, 
-come per FLAC).
-<br>
-Applicazioni Pratiche
-La codifica audio è utilizzata in diversi settori:
-<li> Streaming: Servizi come Spotify e YouTube impiegano codifiche audio per trasmettere musica e video in streaming.</li>
-<br>
- <li>Telefonia: La tecnologia VoIP (Voice over Internet Protocol) utilizza codec audio per trasmettere le voci su reti digitali.</li>
-<br>
- <li>Archiviazione: La musica digitale viene codificata in formati come MP3 o FLAC per essere memorizzata e 
-<br>
-   riprodotta su dispositivi come smartphone e lettori multimediali.</li>
-<br>
-La codifica audio è un aspetto essenziale della tecnologia moderna
+     Principi Fondamentali
+     <br>
+     1. Campionamento: Il primo passo nella codifica audio è il campionamento, che consiste nella
+     misurazione del segnale audio analogico a intervalli regolari. La frequenza di campionamento,
+     espressa in Hertz (Hz), indica quante volte al secondo il segnale viene campionato. Ad esempio,
+     una frequenza di campionamento di 44.1 kHz significa che il segnale è campionato 44.100 volte al secondo.
+     <br>
+     2. Quantizzazione: Dopo il campionamento, il segnale analogico viene convertito in un formato 
+     numerico attraverso la quantizzazione. Questo processo prevede l'assegnazione di valori discreti 
+     a ciascun campione. Una maggiore precisione nella quantizzazione porta a una qualità del suono 
+     migliore, ma richiede anche una maggiore quantità di dati.
+     <br>
+     3. Codifica: Una volta quantizzati, i campioni vengono codificati in formato binario utilizzando 
+     codec audio. Codec come MP3, AAC e FLAC determinano il modo in cui i dati vengono compressi e memorizzati. 
+     La compressione può essere lossy (con perdita di dati, come nel caso di MP3) o lossless (senza perdita di dati, 
+     come per FLAC).
+   
+     Applicazioni Pratiche
+     La codifica audio è utilizzata in diversi settori:
+     <li> Streaming: Servizi come Spotify e YouTube impiegano codifiche audio per trasmettere musica e video in streaming.</li>
+     
+      <li>Telefonia: La tecnologia VoIP (Voice over Internet Protocol) utilizza codec audio per trasmettere le voci su reti digitali.</li>
+     
+      <li>Archiviazione: La musica digitale viene codificata in formati come MP3 o FLAC per essere memorizzata e 
+     
+        riprodotta su dispositivi come smartphone e lettori multimediali.</li>
+   
+     La codifica audio è un aspetto essenziale della tecnologia moderna
+     
 
-</h3>
+    </p>
 
-
-<br>
-<h2 id="video"><i>Video</i></h2>
-<br>
-<h3>
-
-   <img src="videocod.jpeg"style="width:550px; height:450px" id="bord">
-
-
-Il video è la sequenza di immagine proittata di una velocità Fps(fream per secondi) che viene visualizzata sullo schermo.
+    <h2 id="VIDEO">5. VIDEO :</h2>
+    <div class="image-container">
+        <img src="videocod.jpeg" alt="errore img video" class="small-img" id="bord">
+       
+    </div>
+    <p>
+        
+      Il video è la sequenza di immagine proittata di una velocità Fps(fream per secondi) che viene visualizzata sullo schermo.
 <br>
 La celocit normale dell'occhio è di 30Fps , ma anche può essere proiettato a 60Fps, 120Fps ma sarà molo veloce da vedere.
 <br>
@@ -483,123 +496,331 @@ La codifica del video è un aspetto fondamentale che sostiene il nostro mondo di
 Grazie ai costanti progressi in questo settore, possiamo fruire di contenuti video di alta qualità in modo veloce, sicuro e sostenibile.
 Investire nella ricerca e nello sviluppo di nuove tecniche di codifica sarà cruciale per affrontare le sfide future e assicurare un'esperienza
 utente sempre più soddisfacente.
-</h3>
-
-<br>
-<h1 id="numeri"><i>Numeri (interi e reali)</i></h1> 
-<br>
-
-<img src="numercod.jpeg"style="width:550px; height:450px" id="bord">
 
 
-   <h3>
+    </p>
+    <h2 id="NUMERI">2. NUMERI (INTERI E REALI) :</h2>
+    <div class="image-container">
+        <img src="numercod.jpeg" alt="errore" class="small-img" id="bord">
+    </div>
+    <p>
+      La codifica dei numeri è un concetto chiave sia nella matematica che nell'informatica.
+      Riguarda il modo in cui rappresentiamo i numeri in vari formati, facilitando così la loro manipolazione,
+       memorizzazione e trasmissione nei sistemi digitali.
+     
+     Principali Tipi di Codifica
+     <ul>
+      1.  Sistema decimale: Questo è il sistema numerico più comune, utilizzato nella vita di tutti i giorni,
+       e si basa su dieci simboli (0-9). Ogni posizione in un numero decimale rappresenta una potenza di 10.
+     </ul>
+     <ul>
+      2.Sistema binario: Utilizzato principalmente in informatica, il sistema binario si basa su due simboli (0 e 1).
+       Ogni posizione in un numero binario rappresenta una potenza di 2.
+     </ul>
+     <ul>
+      3.  Sistema esadecimale: Questo sistema utilizza sedici simboli (0-9 e A-F) e ogni posizione rappresenta una potenza di 16.
+       È frequentemente impiegato in programmazione per rappresentare indirizzi di memoria e colori.
+     </ul>
+     <ul>
+      4.  Sistema ottale: Basato su otto simboli (0-7), ogni posizione in un numero ottale rappresenta una potenza di 8.
+       È stato storicamente utilizzato nei primi computer e in alcuni ambiti specifici.
+     </ul>
+     Processo di Codifica
+     <li>
+      Convertire da decimale a binario: Per convertire un numero decimale in binario, si divide il numero per 2 e si registra il resto.
+       Questo processo si ripete con il quoziente fino a ottenere 0. I resti registrati formano il numero binario.
+     </li>
+     <li>
+      Convertire da decimale a esadecimale: Allo stesso modo, per convertire un numero decimale in esadecimale,
+       si divide il numero per 16 e si registra il resto, ripetendo il processo con il quoziente fino a raggiungere 0.
+        I resti formano il numero esadecimale, con i resti da 10 a 15 rappresentati dalle lettere A-F.
+     </li>
+     <li>
+         Conversione inversa: Per convertire un numero binario o esadecimale in decimale, si moltiplici.
+     </li>
+     Applicazioni Pratiche
+     La codifica dei numeri è fondamentale in diversi settori:
+     - Informatica: I computer operano utilizzando il sistema binario per effettuare calcoli e archiviare informazioni.
+     - Programmazione: I sistemi esadecimale e binario vengono impiegati per rappresentare dati complessi, come indirizzi
+      di memoria e colori nei codici CSS.
+     - Elettronica: I sistemi numerici codificati sono utilizzati per progettare circuiti digitali e schede elettroniche.
+     
+     Conclusione
+     La codifica dei numeri rappresenta un elemento cruciale nell'informatica e nella matematica, consentendo di rappresentare,
+      memorizzare e manipolare numeri in vari formati. Comprendere i diversi sistemi di codifica e le loro conversioni è
+       fondamentale per chiunque operi con sistemi digitali e dati numerici.
+     </ul>
+     
+    
+    </p>
+    <i class="fas fa-arrow-up arrow-up" onclick="scrollToTop()"></i>
 
-Introduzione
-La codifica dei numeri è un concetto chiave sia nella matematica che nell'informatica.
- Riguarda il modo in cui rappresentiamo i numeri in vari formati, facilitando così la loro manipolazione,
-  memorizzazione e trasmissione nei sistemi digitali.
+    <script>
 
-Principali Tipi di Codifica
-<ul>
- 1.  Sistema decimale: Questo è il sistema numerico più comune, utilizzato nella vita di tutti i giorni,
-  e si basa su dieci simboli (0-9). Ogni posizione in un numero decimale rappresenta una potenza di 10.
-</ul>
-<ul>
- 2.Sistema binario: Utilizzato principalmente in informatica, il sistema binario si basa su due simboli (0 e 1).
-  Ogni posizione in un numero binario rappresenta una potenza di 2.
-</ul>
-<ul>
- 3.  Sistema esadecimale: Questo sistema utilizza sedici simboli (0-9 e A-F) e ogni posizione rappresenta una potenza di 16.
-  È frequentemente impiegato in programmazione per rappresentare indirizzi di memoria e colori.
-</ul>
-<ul>
- 4.  Sistema ottale: Basato su otto simboli (0-7), ogni posizione in un numero ottale rappresenta una potenza di 8.
-  È stato storicamente utilizzato nei primi computer e in alcuni ambiti specifici.
-</ul>
-Processo di Codifica
-<li>
- Convertire da decimale a binario: Per convertire un numero decimale in binario, si divide il numero per 2 e si registra il resto.
-  Questo processo si ripete con il quoziente fino a ottenere 0. I resti registrati formano il numero binario.
-</li>
-<li>
- Convertire da decimale a esadecimale: Allo stesso modo, per convertire un numero decimale in esadecimale,
-  si divide il numero per 16 e si registra il resto, ripetendo il processo con il quoziente fino a raggiungere 0.
-   I resti formano il numero esadecimale, con i resti da 10 a 15 rappresentati dalle lettere A-F.
-</li>
-<li>
-    Conversione inversa: Per convertire un numero binario o esadecimale in decimale, si moltiplici.
-</li>
-Applicazioni Pratiche
-La codifica dei numeri è fondamentale in diversi settori:
-- Informatica: I computer operano utilizzando il sistema binario per effettuare calcoli e archiviare informazioni.
-- Programmazione: I sistemi esadecimale e binario vengono impiegati per rappresentare dati complessi, come indirizzi
- di memoria e colori nei codici CSS.
-- Elettronica: I sistemi numerici codificati sono utilizzati per progettare circuiti digitali e schede elettroniche.
+        function toggleMenu() {
+            const navbar = document.getElementById("navbar");
+            if (navbar.style.display === "none" || navbar.style.display === "") {
+                navbar.style.display = "flex"; // Mostra il menu
+            } else {
+                navbar.style.display = "none"; // Nascondi il menu
+            }
+        }
 
-Conclusione
-La codifica dei numeri rappresenta un elemento cruciale nell'informatica e nella matematica, consentendo di rappresentare,
- memorizzare e manipolare numeri in vari formati. Comprendere i diversi sistemi di codifica e le loro conversioni è
-  fondamentale per chiunque operi con sistemi digitali e dati numerici.
-</ul>
+        // Aggiungi questo codice per chiudere il menu quando si clicca altrove
+        document.addEventListener('click', function (event) {
+            const navbar = document.getElementById("navbar");
+            const menuButton = document.getElementById("menu-button");
 
-</h3>
-<br>
-<a href="indice.html" id="indice"><h3>Vai alla pagina indice</h3></a>
-</style>
-<a href="#inizio" id="capitolo3"><h3>Torna all'inizio</h3></a>
-</div>
+            // Se il clic non è sul menu e nemmeno sul pulsante del menu, chiudi il menu
+            if (!navbar.contains(event.target) && !menuButton.contains(event.target)) {
+                navbar.style.display = "none";
+            }
+        });
+
+        // Chiudi il menu quando un link viene cliccato
+        const links = document.querySelectorAll('#navbar a');
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                const navbar = document.getElementById("navbar");
+                navbar.style.display = "none"; // Nascondi il menu
+            });
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
 </body>
 
+</html>
 <style>
+  body {
+  background-color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0px;
+}
 
- #indice{
-   position:fixed;
-            top:40px;
-            right:10px;
- }
-     #capitolo3{
-        position:fixed;
-        top:10px;
-        right:10px;
-    }
-    #bord {
-      border-color: black;
+.button {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background: linear-gradient(45deg, #5a5a5a, #757575);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  color: red;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+#menu-button {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#navbar {
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  font-size: 16px;
+}
+
+#navbar a:hover {
+  background-color: #555;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 450px;
+  height: 50%;
+  margin: 0 auto;
+  padding: 0, 0;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hardware,
+.soft {
+  width: auto;
+  padding: 10px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+img {
+  width: 450px;
+  height: auto;
+  margin: 0 20px;
+}
+
+p {
+    border: 0px solid transparent;
+margin-right: 50px;
+    text-align: center;
+  color: black;
+}
+
+ul {
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd86;
+  padding: 8px ;
+  text-align: left;
+
+}
+th {
+  background-color: #f4f4f452;
+}
+
+.arrow-up {
+  font-size: 50px; 
+  color: #007bff; 
+  cursor: pointer; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+}
+
+.arrow-up:hover {
+  color: #0056b3; 
+}
+
+.td1{
+  color: white;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 10px 5px;
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0056b3; 
+}
+
+
+.hardware.active, .soft.active {
+  display: block;
+}
+
+.hardware, .soft {
+  display: none; 
+}
+
+.hardware{
+  display: block;
+}
+
+.soft{
+  display: none;
+}
+#bord {
+          border-color: black;
           border-style: groove;
           border-width: 10px;
           width: 500px;
           margin: 15px;
           padding: 0px;
           border-radius: 8px;
-    }
-    body {
-         color: white;
-         font-weight: bold; 
-
- }
-</style>
-
-<style>
-  body{
-   background-image: url(background.jpeg); 
-   color: white;
-   font-weight: bold;
-  }
-  h1{
-          border:0px solid transparent;
-          position: relative;
-          margin-left: 600px;
         }
-  div
-          {
-            border: 8px solid black;
-            border-radius: 25px;
-            position: relative;
-            margin-left: 380px;
-            margin-right: 420px ;
-            font-weight: bold;
-            box-shadow: 5px 10px #888888;
-          }
-  img:hover {
+        img:hover {
             animation: shake 0.5s;
             animation-iteration-count: infinite;
             }

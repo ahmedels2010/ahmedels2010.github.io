@@ -1,43 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPITOLO 1</title>
+  <link rel="stylesheet" href="css/capitolo1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <!-- MathJax library for rendering mathematical formulas -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
 <body>
-    <h1 id="c'osè l'informatica"><b>COS'E' L'INFORMATICA:</b></h1>
-    <br>
-    <div id="uno">
-    <h3>
-     <a href="#informatica come scienza"><i>la scienza</i></a>
-    
-     <br>
-     <a href="#breve storia dell'informatica"><i>la storia</i></a>
-    <br>
-      <a href="#aspetti positivi della tecnologia"><i>aspetti positivi</i></a>
-      <br>
-       <a href="#aspetti negativi della tecnologia"><i>aspetti negativi</i></a>
-       <br>
-        <a href="#comportamento in rete"><i>comportamento in rete</i></a>
-        <br>
-        </h3>
-    </div>
-    <div id="sinistra">
-    <h2 id="informatica come scienza"><b>informatica come scienza:</b></h2>
-    <br>
-    <img src="scienza.jpeg" style="width:550px; height:450px;" id="bord"  id="img"/>
-    <br>
-      <h3>
+  <div class="button">
+    <a href="copertina.html" class="btn"><i class="fas fa-home"></i> COPERTINA</a>
+    <a href="indice.html" class="btn"><i class="fas fa-list"></i> INDICE</a>
+    <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 1</a>
+    <a href="capitolo2.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 2</a>
+    <a href="capitolo3.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
+    <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
+    <a href="capitolo5.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+  </div>
+
+  <div id="menu-button" onclick="toggleMenu()">☰</div>
+
+  <h1> CAPITOLO 1 : </h1>
+
+  <div id="navbar">
+    <a href="#informatica come scienza">Scienza</a>
+    <a href="#breve storia dell'informatica">Storia</a>
+    <a href="#aspetti posetivi della tecnologia">Aspetti Positivi </a>
+    <a href="#aspetti negativi della tecnologia">Aspetti Negativi</a>
+    <a href="#comportamento in rete">Comportamento in Rete</a>
+  </div>
+
+  <h2 id="informatica come scienza">1. Scienza :</h2>
+  <p><img src="scienza.jpeg" alt="errore" id="bord" /></p>
+  <h3>
     Cos'è l'informatica e cosa significa questo nome?
-    <br>
     La parola informatica nasce dalla funzione di due parole:
-    <br>
     <b>Informazione automatica</b>. L'informatica è la scienza che si occupa
-    <br>
     di conservare e raccogliere i dati attraverso l'elaborazione.
-    <br>
     Il miglior esempio di elaborazione è il computer, esso è nascosto ovunque
-    <br>
     , nei televisori, fotocamere, cellulari.
-    <br>
     L'informatica è lo studio dei processi legati alla raccolta, all'elaborazione,
-    <br>
     all'archiviazione e alla trasmissione delle informazioni.
-    <br>
     Campi di studio:
     <br>
     1) <u>Algoritmi e strutture dati</u>.
@@ -49,247 +57,344 @@
     4) <u>Sistemi operativi e reti</u>.
     <br>
     Ruolo nella società: L'informatica è essenziale in settori come l'economia,
-    <br>
     la medicina, l'ingegneria e l'istruzione.
-    <br>
-    </h3>
-    </div>
-    <div id="destra" class="sopra1">
-    <h2 id="breve storia dell'informatica"><b>breve storia dell'informatica:</b></h2>
-    <br>
-    <img src="storia.jpeg" style="width:550px; height:450px;"id="bord" id="img" />
-    <br>
-      <h3>
+  </h3>
+  <h2 id="breve storia dell'informatica">2. Storia :</h2>
+  <p><img src="storia.jpeg" alt="errore"  id="bord" /></p>
+  <h3>
     Origini: L'informatica moderna ha avuto inizio nel XX secolo, ma le sue fondamenta
-    <br>
+
     si possono rintracciare in invenzioni come il telescopio meccanico di Charles Babbage 
-    <br>
+
     e nei lavori di Alan Turing.
-    <br>
     Primi computer:
-    <br>
     <b>ENIAC</b> (1945), il primo computer elettronico;
     
-    <br>
     <b>UNIVAC</b> (1951), il primo computer commerciale.
-    <br>
     
     
     Evoluzione:
-    <br>
     Dai grandi computer mainframe degli anni '60, ai personal computer degli anni '80,
-    <br>
     fino alla rivoluzione del cloud computing e dei dispositivi mobili.
-    <br>
-    </h3>
-  </div>
-  <div id="sinistra" class="sopra">
-    <h2 id="aspetti positivi della tecnologia"><b>aspetti positivi della tecnologia:</b></h2>
-    <br>
-    <img src="aspetti posetivi.jpeg" style="width:550px; height:450px;" id="bord" id="img" />
-    <br>
-    <h3>
+  </h3>
+  <h2 id="aspetti posetivi della tecnologia">3. Aspetti Positivi :</h2>
+  <p><img src="aspetti posetivi.jpeg" alt="errore" id="bord" /></p>
+  <h3>
     <b>ACCESSO ALL'INFORMATICA:</b>
-    <br>
+    
     Internet consente di accedere a conoscenze e risorse ovunque.
-    <br>
+    
     <b>AUTOMAZIONE:</b>
-    <br>
+    
     Aumenta l'efficienza produttiva in vari settori, come l'industria, la sanità e l'educazione.
-    <br>
+    
     <b>COMUNICAZIONE GLOBALE:</b>
-    <br>
+    
     Le tecnologie informatiche hanno reso la comunicazione immediata e a basso costo.
-    <br>
+    
     <b>INNOVAZIONE:</b>
-    <br>
     La tecnologia facilita la creazione di nuovi strumenti e soluzioni per affrontare problemi complessi.
-    <br>
-    </h3>
-  </div>
-  <div id="destra" class="sopra2">
-    <h2 id="aspetti negativi della tecnologia"><b>aspetti negativi della tecnologia:</b></h2>
-    <br>
-    <img src="aspetti negativi.jpeg" style="width:550px; height:450px;" id="bord"  id="img" />
-    <br>
-      <h3>
-        La tecnologia, senza dubbio, ha portato enormi benefici alla società, 
-<br>
-        migliorando la comunicazione, l'efficienza e l'accesso all'informazione. 
-<br>
-        Tuttavia, non possiamo ignorare gli aspetti negativi che accompagnano 
-<br>
-        l'avanzamento tecnologico. Se da un lato la tecnologia ha trasformato 
-<br>
-        il nostro modo di vivere, dall'altro ha anche generato una serie di 
-<br>
-        problematiche che meritano attenzione.
-<br>
-Uno dei principali aspetti negativi riguarda **l'isolamento sociale**. 
-<br>
+    
+  </h3>
+  <h2 id="aspetti negativi della tecnologia"> 4. Aspetti negativi della tecnologia</h2>
+<p><img src="aspetti negativi.jpeg" alt="errore" id="bord" /></p>
+<h3>
+    La tecnologia, senza dubbio, ha portato enormi benefici alla società, 
+    
+    migliorando la comunicazione, l'efficienza e l'accesso all'informazione. 
+
+    Tuttavia, non possiamo ignorare gli aspetti negativi che accompagnano 
+
+    l'avanzamento tecnologico. Se da un lato la tecnologia ha trasformato 
+
+    il nostro modo di vivere, dall'altro ha anche generato una serie di 
+
+    problematiche che meritano attenzione.
+
+Uno dei principali aspetti negativi riguarda l'isolamento sociale. 
 
 Sebbene le piattaforme di social media e le applicazioni di messaggistica 
-<br>
+
 ci permettano di rimanere in contatto con persone in tutto il mondo, 
-<br>
+
 spesso queste interazioni sono superficiali. L'uso eccessivo di dispositivi 
-<br>
+
 digitali può ridurre la qualità delle relazioni interpersonali, aumentando 
-<br>
+
 il rischio di solitudine e di alienazione. In alcuni casi, l'illusione di 
-<br>
+
 connessioni virtuali può sostituire quelle reali, più profonde, che sono 
-<br>
+
 fondamentali per il nostro benessere emotivo.
-<br>
-Un altro aspetto problematico è il **contributo alla disinformazione**. 
-<br>
+
+Un altro aspetto problematico è il contributo alla disinformazione. 
+
 Con la facilità di pubblicare contenuti su internet, è diventato più 
-<br>
+
 difficile distinguere tra informazioni veritiere e false. Le fake news 
-<br>
+
 e le teorie del complotto si diffondono velocemente sui social, 
-<br>
+
 influenzando l'opinione pubblica, creando divisioni sociali e politiche. 
-<br>
+
 La tecnologia, invece di essere un mezzo per informare, spesso viene 
-<br>
+
 sfruttata per manipolare l’opinione delle persone.
-<br>
-Inoltre, la tecnologia ha avuto un impatto significativo sulla **salute 
-<br>
-mentale e fisica**. L'uso prolungato di schermi, per esempio, è associato 
-<br>
+
+Inoltre, la tecnologia ha avuto un impatto significativo sulla salute 
+
+mentale e fisica. L'uso prolungato di schermi, per esempio, è associato 
+
 a disturbi come l'affaticamento oculare, mal di testa e difficoltà a dormire. 
-<br>
+
 Ma le implicazioni sono ancora più profonde: l'esposizione costante ai social 
-<br>
+
 media può alimentare sentimenti di inadeguatezza, stress e ansia, specialmente 
-<br>
+
 tra i giovani, che sono più vulnerabili alle pressioni esterne. Inoltre, 
-<br>
+
 l'adozione della tecnologia in modo eccessivo può portare a un abbassamento 
-<br>
+
 dell'attività fisica, con conseguenti problemi legati alla sedentarietà.
-<br>
-Non meno rilevante è l'impatto della tecnologia sul **mercato del lavoro**. 
-<br>
+
+Non meno rilevante è l'impatto della tecnologia sul mercato del lavoro. 
+
 Mentre alcune professioni sono state semplificate, altre sono scomparse del 
-<br>
+
 tutto. L'automazione e l'intelligenza artificiale stanno sostituendo molte 
-<br>
+
 attività umane, creando una crescente disoccupazione e una crescente 
-<br>
+
 disuguaglianza economica. Le competenze richieste nel mondo del lavoro 
-<br>
+
 stanno cambiando rapidamente, e non tutti hanno accesso alle risorse 
-<br>
+
 necessarie per adeguarsi a queste trasformazioni.
-<br>
-Infine, c'è il tema della **privacy e della sicurezza**. La digitalizzazione 
-<br>
+Infine, c'è il tema della privacy e della sicurezza. La digitalizzazione 
+
 delle nostre vite ha comportato una raccolta massiccia di dati personali. 
-<br>
+
 Le aziende e i governi hanno accesso a informazioni intime, che possono 
-<br>
+
 essere utilizzate in modi a volte non trasparenti o eticamente dubbi. 
-<br>
+
 I rischi di cyber attacchi e furti d'identità sono in continua crescita, 
-<br>
+
 minacciando la sicurezza individuale e collettiva.
-<br>
+
 In conclusione, sebbene la tecnologia offra innumerevoli vantaggi, 
-<br>
+
 è importante riconoscere anche i suoi lati oscuri. Dobbiamo essere 
-<br>
+
 consapevoli delle sue potenzialità di causare danni e adottare un 
-<br>
+
 approccio critico e responsabile, per sfruttarla in modo che contribuisca 
-<br>
+
 al bene della società senza compromettere la nostra salute, la nostra 
-<br>
+
 privacy e la nostra coesione sociale.
-<br>
-</h3>
-</div>
-<div id="sinistra" class="sopra3">
-    <h2 id="comportamento in rete"><b>Comportamento in rete:</b></h2>
-    <br>
-    <img src="comportamento in rete.jpeg" style="width:550px; height:450px" id="bord" id="img" >
-    <br>
-      <h3>
+</h3> 
+<h2 id="comportamento in rete">5. Comportamento in Rete :</h2>
+  <p><img src="comportamento in rete.jpeg" alt="errore"  id="bord"/></p>
+  <h3>
     <b>Netiquette:</b> Il comportamento corretto online, che include rispetto per gli altri, evitare comportamenti
-    <br>
+    
     offensivi e seguire le norme di buone maniere digitali.
-    <br>
+    
     Il comportamento in rete, conosciuto anche come netiquette, riguarda le buone
-    <br>
+    
      maniere e le linee guida per interagire in modo rispettoso e appropriato su Internet.
-     <br>
+     
       Ecco alcuni principi fondamentali:
       
+   
     
-    
-    <ul>
-      <li>Rispetto e cortesia: Tratta gli altri utenti online come vorresti essere trattato.
+    <br>
+      Rispetto e cortesia: Tratta gli altri utenti online come vorresti essere trattato.
         <br>
-        Evita linguaggio offensivo e mantieni un tono rispettoso nelle discussioni.</li>
-        <li>Privacy: Proteggi la tua privacy e rispetta quella degli altri.
+        1.Evita linguaggio offensivo e mantieni un tono rispettoso nelle discussioni.
+        Privacy: Proteggi la tua privacy e rispetta quella degli altri.
           <br>
-          Non condividere informazioni personali senza il consenso della persona interessata.</li>
-        <li>Riconoscere le fonti: Quando condividi informazioni o contenuti di altri,
-          <br>
-           assicurati di fornire sempre i riferimenti o i crediti appropriati.</li>
-        <li>Evitare lo spam: Non inviare messaggi indesiderati, pubblicità non richiesta
-          <br>
-          o contenuti ripetitivi nelle discussioni o nelle e-mail.</li>
-        <li>Non alimentare i troll: I troll sono utenti che provocano o disturbano
-          <br>
+        2.Non condividere informazioni personali senza il consenso della persona interessata.</li>
+<br>
+        3.Riconoscere le fonti: Quando condividi informazioni o contenuti di altri,
+            
+        assicurati di fornire sempre i riferimenti o i crediti appropriati.
+<br>
+        4.Evitare lo spam: Non inviare messaggi indesiderati, pubblicità non richiesta
+        
+          o contenuti ripetitivi nelle discussioni o nelle e-mail.
+<br>
+          5.Non alimentare i troll: I troll sono utenti che provocano o disturbano
+        
           deliberatamente le discussioni online. È meglio ignorarli piuttosto che rispondere.
-         </li>
-        <li>Contributo costruttivo: Cerca di aggiungere valore alle conversazioni
-          <br>
-          con commenti pertinenti e costruttivi.</li>
-      </ul>
+         <br>
+        6.Contributo costruttivo: Cerca di aggiungere valore alle conversazioni
+
+          con commenti pertinenti e costruttivi.
+      
     
     Seguire queste linee guida può contribuire a creare un ambiente online più
-    <br>
-     positivo e rispettoso. Hai mai avuto esperienze particolari online che ti hanno colpito?
-    <br>
     
-    </div>
-    <a href="indice.html" id="indice"><i><h3>Vai alla pagina indice</h3></i></a>
-    <br> 
-    </h3>
-    <a href="#c'osè l'informatica" id="capitolo1"><h3>Torna all'inizio</h3></a>
-    </body>
-    <style>
+     positivo e rispettoso. Hai mai avuto esperienze particolari online che ti hanno colpito?
+  </h3>
+  <i class="fas fa-arrow-up arrow-up" onclick="scrollToTop()"></i>
+  
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
-        #indice{
-            position:fixed;
-            top:40px;
-            right:10px;
+    function toggleMenu() {
+      const navbar = document.getElementById("navbar");
+      if (navbar.style.display === "none" || navbar.style.display === "") {
+        navbar.style.display = "flex"; 
+      } else {
+        navbar.style.display = "none"; 
       }
+    }
 
-        #capitolo1{
-            position:fixed;
-            top:10px;
-            right:10px;
-        }
-        div{
-            border: 8px solid black;
-            border-radius: 25px;
-            position: relative;
-            margin-top: 15px;
-            font-weight: bold;
-            box-shadow: 5px 10px #888888;
-        }
-        h1{
-          border:0px solid transparent;
-          position: relative;
-          margin-left: 600px;
-        }
-        #bord {
+    document.addEventListener('click', function (event) {
+      const navbar = document.getElementById("navbar");
+      const menuButton = document.getElementById("menu-button");
+
+      if (!navbar.contains(event.target) && !menuButton.contains(event.target)) {
+        navbar.style.display = "none";
+      }
+    });
+
+    const links = document.querySelectorAll('#navbar a');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        const navbar = document.getElementById("navbar");
+        navbar.style.display = "none"; 
+      });
+    });
+  </script>
+</body>
+
+</html>
+<style>
+    body {
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+
+
+}
+
+.button {
+    text-align: center; 
+    margin-top: 1px; 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 12px 24px ; 
+    margin: 10px; 
+    background: linear-gradient(45deg, #5a5a5a, #757575); 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.btn:hover {
+    color: red;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+
+}
+
+.btn i {
+    margin-right: 8px; 
+}
+
+.arrow-up {
+    font-size: 50px; 
+    color: #007bff; 
+    cursor: pointer; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+}
+
+.arrow-up:hover {
+    color: #0056b3; 
+}
+
+img{
+    width: 450px;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+p {
+    border: 0px solid transparent;
+margin-right: 50px;
+    text-align: center;
+  color: black;
+}
+
+
+#menu-button {
+    position: fixed;
+    top: 15px;
+    left:  10px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    display: none; 
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-size: 16px;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    text-align: center;
+
+}
+#bord {
             border-color: black;
             border-style: groove;
             border-width: 10px;
@@ -298,36 +403,7 @@ privacy e la nostra coesione sociale.
             padding: 0px;
             border-radius: 8px;
         }
-        body {
-            background-image: url(background.jpeg); 
-            color: white
-            }
-            #uno {
-              margin-right: 1300px;
-            }
-            #sinistra{
-              margin-right:900px;
-            }
-            #destra{
-              margin-right: 200px;
-              margin-left: 680px;
-              padding-bottom: 85px;
-              position: relative;
-            }
-            .sopra{
-              top: -975px;
-              padding-bottom: 905px;
-            }
-            .sopra1{
-              top: -980px;
-            }
-            .sopra2{
-              top: -2775px;
-            }
-            .sopra3{
-              top: -2760px;
-            }
-            img:hover {
+        img:hover {
             animation: shake 0.5s;
             animation-iteration-count: infinite;
             }
@@ -345,5 +421,4 @@ privacy e la nostra coesione sociale.
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
                         }
-  
-    </style>
+</style>

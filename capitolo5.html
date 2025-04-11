@@ -1,68 +1,237 @@
-<body>
-    <div>
-        <h1 id="capitolo5.html">Cpitolo 5 </h1>
-        <h3>
-            <ul>
-                <li><a href="#pan">Pan</a></li>
-            <li><a href="#lan">Lan</a></li>
-            <li><a href="#wan">Wan</a></li>
-            <li><a href="#internet">Internet</a></li>
-            </ul>
-        </h3>
-    </div>
-</h3>
-<a href="indice.html" id="indice"><i><h3>Vai alla pagina indice</h3></i></a>
-    <br> 
-    </h3>
-    <a href="#capitolo4.html" id="capitolo4"><h3>Torna all'inizio</h3></a>
-</body>
-<style>
-                  body {
-      background-image: url(background.jpeg); 
-      color: white
-    }
-    #indice{
-        position:fixed;
-            top:40px;
-            right:10px;
-      }
 
-        #capitolo4{
-            position:fixed;
-            top:10px;
-            right:10px;
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/capitolo5.css">
+    <title>capitolo5</title>
+
+</head>
+
+<body>
+
+    <div class="button">
+        <a href="copertina.html" class="btn"><i class="fas fa-home"></i> COPERTINA</a>
+        <a href="indice.html" class="btn"><i class="fas fa-list"></i> INDICE</a>
+        <a href="capitolo1.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 1</a>
+        <a href="capitolo2.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 2</a>
+        <a href="capitolo3.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
+        <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
+        <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+    </div>
+
+    <div id="menu-button">☰</div>
+    <div id="navbar">
+        <a href="#pan">Pan</a>
+        <a href="#lan">Lan</a>
+        <a href="#wan">Wan</a>
+        <a href="#internet">Internet</a>
+      </div>
+
+    <div class="content">
+        <h1>CAP 5 :</h1>
+        <div class="image-container">
+     
+        </div>
+
+        <h2 id="pan">1.Pan</h2>
+        <div class="image-container">
+            <img src="img/rete.png" alt="La rete Internet" class="small-img">
+        </div>
+      
+        <h2 id="lan">2. Lan</h2>
+        <div class="image-container">
+            <img src="img/2.webp" alt="Protocolli di comunicazione" class="small-img">
+        </div>
+        
+
+        <h2 id="wan">3. Wan</h2>
+        <div class="image-container">
+            <img src="img/5g.jpg" alt="Connessione a Internet" class="small-img">
+        </div>
+        
+        <h2 id="internet">4.Internet</h2>
+        <div class="image-container">
+            <img src="img/4.png" alt="Servizi di Internet" class="small-img">
+        </div>
+       
+
+    <div class="arrow-up" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // Funzione per mostrare/nascondere il menu
+        document.getElementById('menu-button').addEventListener('click', function () {
+            var navbar = document.getElementById('navbar');
+            if (navbar.style.display === 'none' || navbar.style.display === '') {
+                navbar.style.display = 'flex';
+            } else {
+                navbar.style.display = 'none';
+            }
+        });
+
+        // Funzione per tornare all'inizio della pagina
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        div{
-          width: 500px;
-          padding: 0px;
-          margin: 10px;
-        }
-        div1 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
+    </script>
+</body>
+
+</html>
+
+
+
+<style>
+  body {
+background-color: darkgray;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 0px;
 }
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
+
+.button {
+text-align: center; /* Center align buttons */
+margin-top: 1px; /* Space above the button div */
+}
+
+.btn {
+display: inline-block; /* Make the link behave like a button */
+padding: 12px 24px; /* Padding inside the button */
+margin: 10px; /* Space between buttons */
+background: linear-gradient(
+  45deg,
+  #5a5a5a,
+  #757575
+); /* Gradient background */
+color: white; /* White text color */
+text-decoration: none; /* Remove underline from links */
+border-radius: 8px; /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for effects */
+}
+
+.btn:hover {
+color: red;
+transform: translateY(-3px); /* Lift effect on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.btn i {
+margin-right: 8px; /* Space between icon and text */
+}
+
+#menu-button {
+position: fixed;
+top: 15px;
+left: 10px;
+width: 40px;
+height: 40px;
+background-color: #333;
+color: white;
+font-size: 24px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+z-index: 1001;
+}
+
+/* تصميم شريط الروابط */
+#navbar {
+position: fixed;
+top: 60px;
+left: 10px;
+background-color: #333;
+padding: 10px;
+border-radius: 8px;
+display: none; /* يبدأ غير مرئي */
+flex-direction: column;
+align-items: flex-start;
+z-index: 1000;
+}
+
+#navbar a {
+color: white;
+text-decoration: none;
+padding: 8px;
+display: block;
+font-size: 16px;
+}
+
+#navbar a:hover {
+background-color: #555;
+}
+
+.image-container {
+text-align: center;
+margin: 20px 0;
+}
+
+img {
+max-width: 100%; /* Responsive */
+height: auto; /* Maintain aspect ratio */
+}
+
+.small-img {
+width: 50%; /* Adjust width as needed */
+max-width: 300px; /* Optional max width */
+}
+
+h1 {
+text-align: center;
+}
+
+p {
+  border: 0px solid transparent;
+margin-right: 50px;
+  text-align: center;
+color: black;
+
+}
+
+h2 {
+text-align: center;
+color: black;
+}
+
+.arrow-up {
+font-size: 50px;
+color: #007bff;
+cursor: pointer;
+position: fixed;
+bottom: 20px;
+right: 20px;
+}
+
+.arrow-up:hover {
+color: #0056b3;
 }
 #bord {
-          border-color: black;
-          border-style: groove;
-          border-width: 10px;
-          width: 500px;
-          margin: 15px;
-          padding: 0px;
-          border-radius: 8px;
-        }
-        div2 {
-position: relative;
-animation-name: mymove8;
-animation-duration: 20s;
-}
+        border-color: black;
+        border-style: groove;
+        border-width: 10px;
+        width: 500px;
+        margin: 15px;
+        padding: 0px;
+        border-radius: 8px;
+      }
+      img:hover {
+          animation: shake 0.5s;
+          animation-iteration-count: infinite;
+          }
 
-@keyframes mymove8 {
-from {left: 500px;}
-to {left: 0px;}
-}
+      @keyframes shake {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+          10% { transform: translate(-1px, -2px) rotate(-1deg); }
+          20% { transform: translate(-3px, 0px) rotate(1deg); }
+          30% { transform: translate(3px, 2px) rotate(0deg); }
+          40% { transform: translate(1px, -1px) rotate(1deg); }
+          50% { transform: translate(-1px, 2px) rotate(-1deg); }
+          60% { transform: translate(-3px, 1px) rotate(0deg); }
+          70% { transform: translate(3px, 1px) rotate(-1deg); }
+          80% { transform: translate(-1px, -1px) rotate(1deg); }
+          90% { transform: translate(1px, 2px) rotate(0deg); }
+          100% { transform: translate(1px, -2px) rotate(-1deg); }
+                      }
 </style>
