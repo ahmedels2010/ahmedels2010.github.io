@@ -7,7 +7,7 @@ let score = 0;
 let gameOver = false;
 
 document.addEventListener("keydown", e => {
-  if (e.code === "Space") {
+  if (e .code === "Space") {
     bird.velocity = bird.lift;
     if (gameOver) location.reload();
   }

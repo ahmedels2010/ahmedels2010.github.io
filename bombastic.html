@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Multiplayer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #70c5ce; }
+        canvas { display: block; margin: 0 auto; background-color: #70c5ce; }
+        #game-container { text-align: center; }
+        .hidden { display: none; }
+        .message { font-family: Arial, sans-serif; font-size: 24px; color: white; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1 class="message">Flappy Bird Multiplayer</h1>
+        <canvas id="gameCanvas" width="320" height="480"></canvas>
+    </div>
+
+    <script>
+        // Game Constants
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+        const GRAVITY = 0.25;
+        const FLAP = -5;
+        const SPAWN_RATE = 90;
+        const PIPE_WIDTH = 50;
+        const PIPE_SPACING = 200;
+        const PIPE_HEIGHT = canvas.height / 2;
+
+        // Game Variables
+        let birdY = canvas.height / 2;
+        let birdVelocity = 0;
+        let birdFlap = false;
+        let pipes = [];
+        let gameRunning = true;
+        let lastPipeSpawn = 0;
+        let score = 0;
+        let otherPlayer = { y: canvas.height / 2, flap: false, velocity: 0 };
+
+        // WebRTC variables
+        let localConnection;
+        let remoteConnection;
+        let sendChannel;
+        let receivedChannel;
+
+        // Set up WebRTC
+        function setupWebRTC() {
+            localConnection = new RTCPeerConnection();
+            remoteConnection = new RTCPeerConnection();
+
+            sendChannel = localConnection.createDataChannel("sendChannel");
+            sendChannel.onopen = () => console.log("Data channel open");
+            sendChannel.onclose = () => console.log("Data channel closed");
+
+            remoteConnection.ondatachannel = (event) => {
+                receivedChannel = event.channel;
+                receivedChannel.onmessage = (event) => {
+                    const data = JSON.parse(event.data);
+                    if (data.type === "update") {
+                        otherPlayer = data.player;
+                    }
+                };
+            };
+
+            localConnection.onicecandidate = (event) => {
+                if (event.candidate) {
+                    remoteConnection.addIceCandidate(event.candidate);
+                }
+            };
+
+            remoteConnection.onicecandidate = (event) => {
+                if (event.candidate) {
+                    localConnection.addIceCandidate(event.candidate);
+                }
+            };
+
+            localConnection.createOffer()
+                .then(offer => localConnection.setLocalDescription(offer))
+                .then(() => remoteConnection.setRemoteDescription(localConnection.localDescription))
+                .then(() => remoteConnection.createAnswer())
+                .then(answer => remoteConnection.setLocalDescription(answer))
+                .then(() => localConnection.setRemoteDescription(remoteConnection.localDescription));
+        }
+
+        // Game Functions
+        function drawBird(y) {
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(50, y, 20, 20);
+        }
+
+        function drawPipes() {
+            ctx.fillStyle = "green";
+            pipes.forEach(pipe => {
+                ctx.fillRect(pipe.x, 0, PIPE_WIDTH, pipe.top);
+                ctx.fillRect(pipe.x, pipe.bottom, PIPE_WIDTH, canvas.height - pipe.bottom);
+            });
+        }
+
+        function movePipes() {
+            pipes.forEach(pipe => {
+                pipe.x -= 2;
+            });
+            pipes = pipes.filter(pipe => pipe.x + PIPE_WIDTH > 0);
+        }
+
+        function spawnPipe() {
+            if (Date.now() - lastPipeSpawn > SPAWN_RATE) {
+                lastPipeSpawn = Date.now();
+                const top = Math.floor(Math.random() * (PIPE_HEIGHT - 60));
+                const bottom = top + PIPE_SPACING;
+                pipes.push({ x: canvas.width, top, bottom });
+            }
+        }
+
+        function updateGame() {
+            if (!gameRunning) return;
+            birdVelocity += GRAVITY;
+            birdY += birdVelocity;
+            if (birdY > canvas.height - 20) birdY = canvas.height - 20;
+            if (birdY < 0) birdY = 0;
+
+            // Update pipes
+            movePipes();
+            spawnPipe();
+            score++;
+
+            // Draw game elements
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBird(birdY);
+            drawPipes();
+            ctx.fillStyle = "white";
+            ctx.font = "20px Arial";
+            ctx.fillText("Score: " + score, 10, 30);
+
+            // Check collisions
+            pipes.forEach(pipe => {
+                if (pipe.x < 70 && pipe.x + PIPE_WIDTH > 50) {
+                    if (birdY < pipe.top || birdY > pipe.bottom) {
+                        gameOver();
+                    }
+                }
+            });
+
+            // Send player data to other player
+            sendChannel.send(JSON.stringify({ type: "update", player: { y: birdY, flap: birdFlap, velocity: birdVelocity } }));
+
+            // Update other player position
+            birdY = otherPlayer.y;
+            birdVelocity = otherPlayer.velocity;
+            birdFlap = otherPlayer.flap;
+
+            // Repeat the update loop
+            requestAnimationFrame(updateGame);
+        }
+
+        function gameOver() {
+            gameRunning = false;
+            ctx.fillStyle = "white";
+            ctx.font = "30px Arial";
+            ctx.fillText("Game Over", canvas.width / 2 - 80, canvas.height / 2);
+        }
+
+        // Listen for key presses
+        document.addEventListener("keydown", (e) => {
+            if (e.key === " ") {
+                birdVelocity = FLAP;
+                birdFlap = true;
+            }
+        });
+
+        // Initialize WebRTC and game
+        setupWebRTC();
+        updateGame();
+    </script>
+</body>
+</html>
