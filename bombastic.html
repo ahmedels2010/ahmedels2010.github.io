@@ -6,23 +6,21 @@
     <title>Flappy Bird Multiplayer</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #70c5ce; }
+        body { background-color: #70c5ce; font-family: Arial, sans-serif; }
         canvas { display: block; margin: 0 auto; background-color: #70c5ce; }
-        #game-container { text-align: center; }
         .hidden { display: none; }
-        .message { font-family: Arial, sans-serif; font-size: 24px; color: white; }
+        .message { font-size: 24px; color: white; text-align: center; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <div id="game-container">
-        <h1 class="message">Flappy Bird Multiplayer</h1>
-        <canvas id="gameCanvas" width="320" height="480"></canvas>
-    </div>
+    <div class="message">Flappy Bird Multiplayer</div>
+    <canvas id="gameCanvas" width="320" height="480"></canvas>
 
     <script>
-        // Game Constants
         const canvas = document.getElementById("gameCanvas");
         const ctx = canvas.getContext("2d");
+
+        // Game Constants
         const GRAVITY = 0.25;
         const FLAP = -5;
         const SPAWN_RATE = 90;
@@ -38,27 +36,25 @@
         let gameRunning = true;
         let lastPipeSpawn = 0;
         let score = 0;
-        let otherPlayer = { y: canvas.height / 2, flap: false, velocity: 0 };
 
-        // WebRTC variables
+        // WebRTC Variables
         let localConnection;
         let remoteConnection;
         let sendChannel;
         let receivedChannel;
 
-        // Set up WebRTC
+        // Player info
+        let otherPlayer = { y: canvas.height / 2, flap: false, velocity: 0 };
+
+        // WebRTC setup
         function setupWebRTC() {
             localConnection = new RTCPeerConnection();
             remoteConnection = new RTCPeerConnection();
 
             sendChannel = localConnection.createDataChannel("sendChannel");
 
-            sendChannel.onopen = () => {
-                console.log("Data channel open");
-            };
-            sendChannel.onclose = () => {
-                console.log("Data channel closed");
-            };
+            sendChannel.onopen = () => console.log("Data channel open");
+            sendChannel.onclose = () => console.log("Data channel closed");
 
             remoteConnection.ondatachannel = (event) => {
                 receivedChannel = event.channel;
@@ -122,8 +118,7 @@
 
         function updateGame() {
             if (!gameRunning) return;
-            
-            // Apply gravity
+
             birdVelocity += GRAVITY;
             birdY += birdVelocity;
 
@@ -131,12 +126,10 @@
             if (birdY > canvas.height - 20) birdY = canvas.height - 20;
             if (birdY < 0) birdY = 0;
 
-            // Update pipes and spawn new ones
             movePipes();
             spawnPipe();
             score++;
 
-            // Draw game elements
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             drawBird(birdY);
             drawPipes();
@@ -144,7 +137,6 @@
             ctx.font = "20px Arial";
             ctx.fillText("Score: " + score, 10, 30);
 
-            // Check collisions
             pipes.forEach(pipe => {
                 if (pipe.x < 70 && pipe.x + PIPE_WIDTH > 50) {
                     if (birdY < pipe.top || birdY > pipe.bottom) {
@@ -153,8 +145,8 @@
                 }
             });
 
-            // Send data if the data channel is open
-            if (sendChannel && sendChannel.readyState === "open") {
+            // Send data to other player
+            if (sendChannel.readyState === "open") {
                 sendChannel.send(JSON.stringify({ type: "update", player: { y: birdY, flap: birdFlap, velocity: birdVelocity } }));
             }
 
@@ -163,7 +155,6 @@
             birdVelocity = otherPlayer.velocity;
             birdFlap = otherPlayer.flap;
 
-            // Repeat the update loop
             requestAnimationFrame(updateGame);
         }
 
@@ -182,7 +173,7 @@
             }
         });
 
-        // Initialize WebRTC and game
+        // Initialize the game and WebRTC
         setupWebRTC();
         updateGame();
     </script>
