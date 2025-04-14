@@ -52,8 +52,13 @@
             remoteConnection = new RTCPeerConnection();
 
             sendChannel = localConnection.createDataChannel("sendChannel");
-            sendChannel.onopen = () => console.log("Data channel open");
-            sendChannel.onclose = () => console.log("Data channel closed");
+
+            sendChannel.onopen = () => {
+                console.log("Data channel open");
+            };
+            sendChannel.onclose = () => {
+                console.log("Data channel closed");
+            };
 
             remoteConnection.ondatachannel = (event) => {
                 receivedChannel = event.channel;
@@ -117,12 +122,16 @@
 
         function updateGame() {
             if (!gameRunning) return;
+            
+            // Apply gravity
             birdVelocity += GRAVITY;
             birdY += birdVelocity;
+
+            // Prevent bird from falling below the ground
             if (birdY > canvas.height - 20) birdY = canvas.height - 20;
             if (birdY < 0) birdY = 0;
 
-            // Update pipes
+            // Update pipes and spawn new ones
             movePipes();
             spawnPipe();
             score++;
@@ -144,8 +153,10 @@
                 }
             });
 
-            // Send player data to other player
-            sendChannel.send(JSON.stringify({ type: "update", player: { y: birdY, flap: birdFlap, velocity: birdVelocity } }));
+            // Send data if the data channel is open
+            if (sendChannel && sendChannel.readyState === "open") {
+                sendChannel.send(JSON.stringify({ type: "update", player: { y: birdY, flap: birdFlap, velocity: birdVelocity } }));
+            }
 
             // Update other player position
             birdY = otherPlayer.y;
