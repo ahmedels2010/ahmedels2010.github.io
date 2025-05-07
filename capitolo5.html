@@ -3,10 +3,10 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/capitolo5.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/capitolo5.css">
     <title>capitolo5</title>
 
 </head>
@@ -21,6 +21,7 @@
         <a href="capitolo3.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
         <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
         <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+        <a href="capitolo6.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 6</a>
     </div>
 
     <div id="menu-button">☰</div>
@@ -39,7 +40,7 @@
         </div>
        <h2 id="rete"> 1.Cosa è una rete?</h2>
        <div class="image-container">
-        <img src="le-reti.jpg" alt="Cosa è una rete?" class="small-img" style="width: 50%;">
+        <img src="le-reti.jpg" id="bord" alt="Cosa è una rete?" class="small-img" style="width: 50%;">
         <h3>
             La rete, che conosciamo meglio come Internet, è senza dubbio una delle invenzioni più importanti del nostro tempo. Ha cambiato radicalmente il modo in cui comunichiamo, lavoriamo e apprendiamo. In questo capitolo, daremo uno sguardo alla sua evoluzione, ai suoi vantaggi e alle sfide che porta con sé.
 <br>
@@ -70,7 +71,7 @@ La rete è uno strumento potente, capace di unire le persone e promuovere il cam
     </div>
     <h2 id="network"> 1.Personal Area Network</h2>
     <div class="image-container">
-        <img src="network.jpg" alt="Personal Area Network" class="small-img" style="width: 50%;">
+        <img src="network.jpg" id="bord" alt="Personal Area Network" class="small-img" style="width: 50%;">
     </div>
     <h3>
         Nel mondo sempre più connesso di oggi, le Personal Area Network (PAN) stanno diventando sempre più importanti. Queste reti personali ci permettono di collegare e comunicare tra dispositivi in modo semplice e intuitivo. In questo capitolo, daremo un'occhiata a cosa sono le PAN, ai loro vantaggi, alle applicazioni e alle sfide che presentano.
@@ -112,7 +113,7 @@ Le Personal Area Network rappresentano un passo significativo verso un mondo sem
 </h3>
         <h2 id="lan">3. Lan</h2>
         <div class="image-container">
-            <img src="lan.jpg" alt="Lan" class="small-img" style="width: 80%;">
+            <img src="lan.jpg" id="bord" alt="Lan" class="small-img" style="width: 80%;">
         </div>
         <h3>
             La LAN, o rete locale, è un sistema che permette di collegare vari dispositivi all'interno di un'area geografica ristretta, come una casa, un ufficio o un edificio. Questa rete consente a computer, stampanti, smartphone e altri dispositivi di comunicare tra loro e di condividere risorse, come file e connessioni a Internet.
@@ -130,7 +131,7 @@ In sintesi, la LAN è una parte fondamentale della nostra vita digitale, poiché
 
         <h2 id="wan">4. Wan</h2>
         <div class="image-container">
-            <img src="wan.jpg" alt="Wan" class="small-img" style="width: 80%;">
+            <img src="wan.jpg" id="bord" alt="Wan" class="small-img" style="width: 80%;">
         </div>
         <h3>
             Immaginate di trovarvi in una grande città, circondati da persone, edifici e attività. Pensate a come tutte queste entità siano collegate tra loro, non solo fisicamente, ma anche attraverso una rete invisibile che permette la comunicazione e lo scambio di informazioni. Questa rete, che si estende ben oltre i confini di un singolo edificio o di un quartiere, è ciò che chiamiamo WAN, ovvero Rete Area Estesa (Wide Area Network).
@@ -168,7 +169,7 @@ In sintesi, la WAN è un elemento fondamentale nel panorama delle comunicazioni 
         
         <h2 id="gan">5.Gan</h2>
         <div class="image-container">
-            <img src="gan.jpg" alt="Gan" class="small-img" style="width: 50%;">
+            <img src="gan.jpg" id="bord" alt="Gan" class="small-img" style="width: 50%;">
         </div>
       
 <h3>
@@ -303,7 +304,7 @@ Perché è così importante questa scoperta? Perché rappresenta un esempio di i
 
 
   body {
-background-color: darkgray;
+background-color: #555;
 font-family: Arial, Helvetica, sans-serif;
 padding-top: 0px;
 }
@@ -430,14 +431,14 @@ right: 20px;
 color: #0056b3;
 }
 #bord {
-        border-color: black;
-        border-style: groove;
-        border-width: 10px;
-        width: 500px;
-        margin: 15px;
-        padding: 0px;
-        border-radius: 8px;
-      }
+          border-color: black;
+          border-style: groove;
+          border-width: 10px;
+          width: 500px;
+          margin: 15px;
+          padding: 0px;
+          border-radius: 8px;
+        } 
       img:hover {
           animation: shake 0.5s;
           animation-iteration-count: infinite;

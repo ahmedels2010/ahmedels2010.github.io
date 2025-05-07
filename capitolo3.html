@@ -19,6 +19,7 @@
         <a href="#" class="btn"><i class="fas fa-book"></i> CAPITOLO 3</a>
         <a href="capitolo4.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 4</a>
         <a href="capitolo5.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 5</a>
+        <a href="capitolo6.html" class="btn"><i class="fas fa-book"></i> CAPITOLO 6</a>
     </div>
 
     <div id="menu-button" onclick="toggleMenu()">☰</div>
@@ -40,231 +41,148 @@
     <div class="image-container">
         <img src="codifica del testo.jpeg" alt="errore" class="small-img" id="bord">
     </div>
-    <h3>
-       
-      ASCII e Unicode sono essenziali per la rappresentazione 
-     
-      dei caratteri nei sistemi informatici.
-     
-      <b>ASCII</b> (American Standard Code for Information Interchange)
     
-      - Sviluppato negli anni '60, ASCII è stato creato come standard
-      
-      per la rappresentazione dei caratteri nel testo per computer e 
+    ASCII e Unicode sono essenziali per la rappresentazione.<br>
+    dei caratteri nei sistemi informatici.<br>
+    <b>ASCII</b> (American Standard Code for Information Interchange)<br>
+    - Sviluppato negli anni '60, ASCII è stato creato come standard<br>
+    per la rappresentazione dei caratteri nel testo per computer e<br>
+    telecomunicazioni.<br>
+    - Comprende un set di 128 simboli, che include lettere maiuscole<br>
+    e minuscole, numeri, segni di punteggiatura e caratteri di controllo.<br>
+    - Ogni carattere ASCII è rappresentato da un numero decimale che va da 0 a 127.<br>
+    - Ad esempio, il carattere 'A' corrisponde al numero 65, mentre 'a' è<br>
+    rappresentato dal numero 97.<br>
+    - Semplicità: È facilmente interpretabile e ampiamente utilizzato per<br>
+    comunicazioni di base.<br>
+    - Limitazioni: Non supporta caratteri non latini, simboli speciali o<br>
+    lingue con set di caratteri più ampi.<br>
+    <b>Unicode</b><br>
+    - Unicode è stato creato per superare le limitazioni di ASCII, permettendo<br>
+    la rappresentazione di caratteri da tutte le lingue e simboli usati nel mondo.<br>
+    - Si tratta di un sistema di codifica molto più ampio, che include oltre<br>
+    143.000 caratteri.<br>
+    - Universalità: Supporta praticamente tutte le lingue e simboli globali,<br>
+    comprese emoji e simboli matematici.<br>
+    <b>Confronto tra ASCII e Unicode</b><br>
+    Compatibilità:<br>
+    - ASCII è limitato a un set di caratteri di base, mentre Unicode può rappresentare<br>
+    una vasta gamma di caratteri globali.<br>
+    - Unicode in UTF-8 mantiene la compatibilità con ASCII, facilitando la transizione.<br>
+    Utilizzo:<br>
+    - ASCII è ancora utilizzato in contesti semplici dove è necessario un supporto minimo<br>
+    dei caratteri.<br>
+    - Unicode è preferito nelle applicazioni moderne che richiedono supporto multilingue<br>
+    e simboli complessi.<br>
+    <b>Conclusione</b><br>
+    Le codifiche dei testi, con ASCII che rappresenta la semplicità e la standardizzazione<br>
+    iniziale, e Unicode che offre universalità e flessibilità, sono fondamentali per<br>
+    la comunicazione digitale di oggi. Mentre ASCII ha un ruolo storico e specifico,<br>
+    Unicode è diventato il gold standard per la rappresentazione dei testi nel mondo<br>
+    interconnesso e multilingue attuale.<br>
+    ASCII, o American Standard Code for Information Interchange,<br>
+    è un sistema di codifica dei caratteri utilizzato in informatica<br>
+    e telecomunicazioni. Questo codice è stato creato per permettere<br>
+    la rappresentazione di testi e simboli attraverso computer e altri<br>
+    dispositivi digitali.<br>
+    <b>Come Funziona l'ASCII</b><br>
+    ASCII impiega una serie di numeri da 0 a 127 per rappresentare lettere,<br>
+    numeri e simboli. Ogni carattere è associato a un numero decimale,<br>
+    facilmente convertibile in codici binari, che i computer utilizzano per<br>
+    memorizzare e gestire i dati.<br>
+    <b>Esempi di Caratteri ASCII:</b><br>
+    <table>
+    <tr>
+    <th>Lettere Maiuscole</th>
+    <th>Valore ASCII</th>
+    </tr>
+    <tr>
+    <td>A</td>
+  <td>65</td>
+      </tr>
+    <tr>
+    <td>B</td>
 
-      telecomunicazioni.
-
-      - Comprende un set di 128 simboli, che include lettere maiuscole
-      
-      e minuscole, numeri, segni di punteggiatura e caratteri di controllo.
-    
-      - Ogni carattere ASCII è rappresentato da un numero decimale che va da 0 a 127.
-     
-      - Ad esempio, il carattere 'A' corrisponde al numero 65, mentre 'a' è
-     
-      rappresentato dal numero 97.
-      
-      - Semplicità: È facilmente interpretabile e ampiamente utilizzato per 
-      
-      comunicazioni di base.
-      
-      - Limitazioni: Non supporta caratteri non latini, simboli speciali o 
-      
-      lingue con set di caratteri più ampi.
-     
-      
-      <b>Unicode</b>
-    
-      - Unicode è stato creato per superare le limitazioni di ASCII, permettendo 
-    
-      la rappresentazione di caratteri da tutte le lingue e simboli usati nel mondo.
-      
-      - Si tratta di un sistema di codifica molto più ampio, che include oltre 
-      
-      143.000 caratteri.
-      
-      
-      - Universalità: Supporta praticamente tutte le lingue e simboli globali, 
-      
-      comprese emoji e simboli matematici.
-    
-      <b>Confronto tra ASCII e Unicode</b>
-     
-      Compatibilità:
-    
-      - ASCII è limitato a un set di caratteri di base, mentre Unicode può rappresentare
-    
-      una vasta gamma di caratteri globali.
-      
-      - Unicode in UTF-8 mantiene la compatibilità con ASCII, facilitando la transizione.
-      
-      Utilizzo:
-     
-      - ASCII è ancora utilizzato in contesti semplici dove è necessario un supporto minimo 
-      
-      dei caratteri.
-      
-      - Unicode è preferito nelle applicazioni moderne che richiedono supporto multilingue 
-      
-      e simboli complessi.
-      
-      
-      <b>Conclusione</b>
-     
-      Le codifiche dei testi, con ASCII che rappresenta la semplicità e la standardizzazione 
-     
-      iniziale, e Unicode che offre universalità e flessibilità, sono fondamentali per 
-     
-      la comunicazione digitale di oggi. Mentre ASCII ha un ruolo storico e specifico,
-     
-      Unicode è diventato il gold standard per la rappresentazione dei testi nel mondo
-    
-      interconnesso e multilingue attuale.
-     
-      
-      ASCII, o American Standard Code for Information Interchange,
-     
-      è un sistema di codifica dei caratteri utilizzato in informatica
-      
-      e telecomunicazioni. Questo codice è stato creato per permettere 
-    
-      la rappresentazione di testi e simboli attraverso computer e altri 
-      
-      dispositivi digitali.
-     
-      <b>Come Funziona l'ASCII</b>
-      
-      ASCII impiega una serie di numeri da 0 a 127 per rappresentare lettere,
-   
-      numeri e simboli. Ogni carattere è associato a un numero decimale,
-      
-      facilmente convertibile in codici binari, che i computer utilizzano per 
-      
-      memorizzare e gestire i dati.
-   
-      <b>Esempi di Caratteri ASCII:</b>
-    >
-      <table>
-      <tr>
-         <th>Lettere Maiuscole</th>
-         <th>Valore ASCII</th>
-      </tr>
-      <tr>
-       <td>A</td>
-         <td>65</td>
-      </tr>
-      <tr>
-       <td>B</td>
-         <td>66</td>
-      
-      </tr>
-      <tr>
-       <td>... Z</td>
-         <td>90</td>
-      </tr>
-      </table>
+    <tr>
+      <td>B</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>... Z</td>
+      <td>90</td>
+    </tr>
+    </table>
+    <table>
+    <tr>
       <br>
-      <table>
-         <tr>
-         <th>Lettere Minuscole</th>
-         <th>Valore ASCII</th>
-         </tr>
-      <tr>
-       <td>a</td>
-         <td>97</td>
-      </tr>
-      <tr>
-       <td>b</td>
-         <td>98</td>
-      </tr>
-      <tr>
-       <td>... z</td>
-         <td>122</td>
-      </tr>
-      </table>
+      <th>Lettere Minuscole</th>
+      <th>Valore ASCII</th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>... z</td>
+      <td>122</td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+      <th>Numeri</th>
       <br>
-      <table>
-          <tr>
-         <th>Numeri</th>
-         <th>Valore ASCII</th>
-         </tr>
-      <tr>
-       <td>0</td>
-         <td>48</td>
-      </tr>
-      <tr>
-       <td>1</td>
-         <td>49</td>
-      </tr>
-      <tr>
-       <td>... 9</td>
-         <td>57</td>
-      </tr>
-      </table>
+      <th>Valore ASCII</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>... 9</td>
+      <td>57</td>
+    </tr>
+    </table>
+    <table>
+    <tr>
       <br>
-      <table>
-         <tr>
-         <th>Simboli</th>
-         <th>Valore ASCII</th>
-         </tr>
-      <tr>
-       <td>@</td>
-         <td>64</td>
-      </tr>
-      <tr>
-       <td>&</td>
-         <td>38</td>
-      </tr>
-      <tr>
-       <td>... $</td>
-         <td>36</td>
-      </tr>
-      </table>
-      <br>
-      <style>
-      table {
-          border-style: solid;
-          border-width: 1px;
-          border-color: black;
-           border-collapse: collapse;
-      }
-        
-        td,th {
-          border-style: solid;
-          border-width: 1px;
-          border-color: black;
-            border-collapse: collapse;
-        }
-        
-      </style>
-     
-      <b>Importanza Storica</b>
-     
-      Prima dell'adozione diffusa di ASCII, non c'era uno standard comune per  
-  
-      la codifica dei testi nei computer, il che complicava la comunicazione e 
-    
-      lo scambio di dati tra sistemi diversi. ASCII ha standardizzato questo processo,
-    
-      rendendo più semplice lo sviluppo dell'informatica moderna.
-
-      <b>Utilizzo nella Tastiera</b>
-    
-      Sulla tastiera, ogni tasto corrisponde a uno o più codici ASCII. Ad esempio,
-    
-      premendo il tasto "A", si invia il codice 65 al computer, che lo interpreta 
-     
-      e visualizza la lettera "A" sullo schermo. Questo consente la digitazione e
-   
-      la comunicazione digitale come la conosciamo oggi.
-   
-      ASCII ha costituito la base per molte altre codifiche di caratteri che sono seguite,
-      
-      come Unicode, che amplia la rappresentazione dei caratteri a una vasta gamma 
-     
-      di simboli utilizzati in tutto il mondo.
-      
-
+      <th>Simboli</th>
+      <th>Valore ASCII</th>
+    </tr>
+    <tr>
+      <td>@</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>&</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>... $</td>
+      <td>36</td>
+    </tr>
+    </table></tr>
+    <br>
+    <b>Importanza Storica</b><br>
+    Prima dell'adozione diffusa di ASCII, non c'era uno standard comune per<br>
+    la codifica dei testi nei computer, il che complicava la comunicazione e<br>
+    lo scambio di dati tra sistemi diversi. ASCII ha standardizzato questo processo,<br>
+    rendendo più semplice lo sviluppo dell'informatica moderna.<br>
+    <b>Utilizzo nella Tastiera</b><br>
+    Sulla tastiera, ogni tasto corrisponde a uno o più codici ASCII. Ad esempio,<br>
+    premendo il tasto "A", si invia il codice 65 al computer, che lo interpreta<br>
+    e visualizza la lettera "A" sullo schermo. Questo consente la digitazione e<br>
+    la comunicazione digitale come la conosciamo oggi.<br>
+    ASCII ha costituito la base per molte altre codifiche di caratteri che sono seguite,<br>
+    come Unicode, che amplia la rappresentazione dei caratteri a una vasta gamma<br>
+    di simboli utilizzati in tutto il mondo.<br>
 
     </h3>
     <h2 id="IMMAGINI">3. IMMAGINI :</h2>
@@ -597,7 +515,7 @@ utente sempre più soddisfacente.
 </html>
 <style>
   body {
-  background-color: darkgray;
+  background-color: #555;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 0px;
 }
